@@ -21,7 +21,7 @@
 * $\Sigma \in \mathbb{R}^{n_1 \times d_1}$ 和 $\Omega \in \mathbb{R}^{n_2 \times d_2}$ 是两种语言各自词表的 embedding 查找表。每一行表示一个一个单词的 embedding。
 * 显然，两种语言各自的词表大小 $n_1$ 和 $n_2$ 一般肯定不相等；各自训练的词向量维度 $d_1$ 和 $d_2$ 也不一定相等。
 * 根据词对齐工具，找到两种语言中一一对应的词，分别是 $\Sigma ^{\prime} \in \mathbb{R}^{n \times d_1}$ 和 $\Omega ^{\prime} \in \mathbb{R}^{n_2 \times d_2}$。
-* 现在从双方词表中取出两个对应词，记为 $x$ 和 $y$，对他们做投影转换到**共同空间**：$x^{\prime}_{1 \times d} = x_{1 \times d_1} \cdot v_{d_1 \times d}$，$y^{\prime}_{1 \times d} = y_{1 \times d_2} \cdot w_{d_2 \times d}$。
+* 现在从双方词表中取出两个对应词，记为 $x$ 和 $y$，对他们做投影转换到**共同空间**：$x_{1 \times d}^{\prime} = x_{1 \times d_1} \cdot v_{d_1 \times d}$，$y_{1 \times d}^{\prime} = y_{1 \times d_2} \cdot w_{d_2 \times d}$。
 * 计算他们的相关度：
 $$\rho(x^{\prime}, y^{\prime}) = \frac{E[x^{\prime} y^{\prime}]}{\sqrt{E[{x^{\prime}}^2]E[{y^{\prime}}^2]}}$$
 * CCA的目的求出使得最大化这个相关度的投影向量v和w。
