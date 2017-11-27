@@ -5,7 +5,7 @@ Reading natural language processing papers
 - 类别
 	- 未读paper
 	- 年-月
-		- 正在读或已读paper
+		- 正在读或已读paper及其note
 
 ## Papers and Notes
 ### Distributed Representations
@@ -16,7 +16,7 @@ Reading natural language processing papers
 	- ...
 ### Text Classification
 - 2017-09
-	- Bag of Tricks for Efficient Text Classification, 2016 [[pdf]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-09/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-09/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification/note.md)
+	- Joulin et al. - 2016 - Bag of tricks for efficient text classification [[pdf]](https://arxiv.org/abs/1607.01759v3) [[annotated pdf]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-09/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-09/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification/note.md)
 	- ...
 - 2017-10
 	- ...
