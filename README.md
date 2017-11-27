@@ -7,6 +7,22 @@ Reading natural language processing papers
 	- 年-月
 		- 正在读或已读paper
 
+## Papers and Notes
+### Distributed Representations
+- 2017-11
+	- ...
+### Language Model
+- 2017-11
+	- ...
+### Text Classification
+- 2017-09
+	- Bag of Tricks for Efficient Text Classification, 2016 [[pdf]](https://arxiv.org/abs/1607.01759v3) [[note]](./text classification/2017-09/Bag of Tricks for Efficient Text Classification/note.md)
+	- ...
+- 2017-10
+	- ...
+- 2017-11
+	- ...
+
 ## References
 - [Neural Networks for NLP (CS11-747 Fall 2017 @ CMU)](http://www.phontron.com/class/nn4nlp2017/schedule.html)
 ### Deep Learning
