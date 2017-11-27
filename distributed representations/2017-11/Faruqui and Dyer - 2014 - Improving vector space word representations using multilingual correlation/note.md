@@ -1,4 +1,3 @@
-
 ## Introduction
 
 * **distributional hypothesis (Harris, 1954):**  the meaning of words is evidenced by the contexts they occur in.
@@ -17,18 +16,19 @@
 
 * **Canonical correlation analysis (CCA)** is a way of measuring the linear relationship between two multidimensional variables.
 
-![CCA](./CCA.png)
+* ![CCA](./CCA.png)
 
 * $\Sigma \in \mathbb{R}^{n_1 \times d_1}$ 和 $\Omega \in \mathbb{R}^{n_2 \times d_2}$ 是两种语言各自词表的 embedding 查找表。每一行表示一个一个单词的 embedding。
 * 显然，两种语言各自的词表大小 $n_1$ 和 $n_2$ 一般肯定不相等；各自训练的词向量维度 $d_1$ 和 $d_2$ 也不一定相等。
 * 根据词对齐工具，找到两种语言中一一对应的词，分别是 $\Sigma ^{\prime} \in \mathbb{R}^{n \times d_1}$ 和 $\Omega ^{\prime} \in \mathbb{R}^{n_2 \times d_2}$。
 * 现在从双方词表中取出两个对应词，记为 $x$ 和 $y$，对他们做投影转换到**共同空间**：
 $$x^{\prime}_{1 \times d} = x_{1\times d_1} \cdot v_{d_1\times d}$$
+同理，
 $$y^{\prime}_{1 \times d} = y_{1\times d_2} \cdot w_{d_2\times d}$$
 * 计算他们的相关度：
-$$\rio(x^{\prime}, y^{\prime}) = \frac{E[x^{\prime} y^{\prime}]}{\sqrt{E[{x^{\prime}}^2]E[{y^{\prime}}^2}}$$
+$$\rho(x^{\prime}, y^{\prime}) = \frac{E[x^{\prime} y^{\prime}]}{\sqrt{E[{x^{\prime}}^2]E[{y^{\prime}}^2}}$$
 * CCA的目的求出使得最大化这个相关度的投影向量v和w。
-$$v, w = CCA(x,y)=argmax_{v,w} \rio(xv, yw)$$
+$$v, w = CCA(x,y)=argmax_{v,w} \rho(xv, yw)$$
 * 现在一组词拓展成双语语料中所有对齐的词，则有向量形式改为矩阵形式：
 $$V,W = CCA(\Sigma^{\prime}, \Omega^{\prime})$$
 * 注意**共同空间**的维数$d=min\{rank(V), rank(W)\}$，所以共同空间的维数一定比原先两种语言各自embedding空间的维度要小。
