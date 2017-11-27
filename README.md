@@ -10,7 +10,7 @@ Reading natural language processing papers
 ## Papers and Notes
 ### Distributed Representations
 - 2017-11
-	- Faruqui and Dyer - 2014 - Improving vector space word representations using multilingual correlation [[pdf]](http://repository.cmu.edu/lti/31/) [[pdf (annotated)]](./distributed\ representations/2017-11/Faruqui\ and\ Dyer\ -\ 2014\ -\ Improving\ vector\ space\ word\ representations\ using\ multilingual\ correlation/Faruqui\ and\ Dyer\ -\ 2014\ -\ Improving\ vector\ space\ word\ representations\ using\ .pdf) [[note]](./distributed\ representations/2017-11/Faruqui\ and\ Dyer\ -\ 2014\ -\ Improving\ vector\ space\ word\ representations\ using\ multilingual\ correlation/note.md)
+	- Faruqui and Dyer - 2014 - Improving vector space word representations using multilingual correlation [[pdf]](http://repository.cmu.edu/lti/31/) [[pdf (annotated)]](./distributed representations/2017-11/Faruqui and Dyer - 2014 - Improving vector space word representations using multilingual correlation/Faruqui and Dyer - 2014 - Improving vector space word representations using .pdf) [[note]](<./distributed representations/2017-11/Faruqui and Dyer - 2014 - Improving vector space word representations using multilingual correlation/note.md>)
 ### Language Model
 - 2017-11
 	- ...

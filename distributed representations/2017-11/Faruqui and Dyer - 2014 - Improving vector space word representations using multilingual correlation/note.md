@@ -22,11 +22,9 @@
 * 显然，两种语言各自的词表大小 $n_1$ 和 $n_2$ 一般肯定不相等；各自训练的词向量维度 $d_1$ 和 $d_2$ 也不一定相等。
 * 根据词对齐工具，找到两种语言中一一对应的词，分别是 $\Sigma ^{\prime} \in \mathbb{R}^{n \times d_1}$ 和 $\Omega ^{\prime} \in \mathbb{R}^{n_2 \times d_2}$。
 * 现在从双方词表中取出两个对应词，记为 $x$ 和 $y$，对他们做投影转换到**共同空间**：
-$$x^{\prime}_{1 \times d} = x_{1\times d_1} \cdot v_{d_1\times d}$$
-同理，
-$$y^{\prime}_{1 \times d} = y_{1\times d_2} \cdot w_{d_2\times d}$$
+$$x^{\prime}_{1 \times d} = x_{1\times d_1} \cdot v_{d_1\times d}, y^{\prime}_{1 \times d} = y_{1\times d_2} \cdot w_{d_2\times d}$$
 * 计算他们的相关度：
-$$\rho(x^{\prime}, y^{\prime}) = \frac{E[x^{\prime} y^{\prime}]}{\sqrt{E[{x^{\prime}}^2]E[{y^{\prime}}^2}}$$
+$$\rho(x^{\prime}, y^{\prime}) = \frac{E[x^{\prime} y^{\prime}]}{\sqrt{E[{x^{\prime}}^2]E[{y^{\prime}}^2]}}$$
 * CCA的目的求出使得最大化这个相关度的投影向量v和w。
 $$v, w = CCA(x,y)=argmax_{v,w} \rho(xv, yw)$$
 * 现在一组词拓展成双语语料中所有对齐的词，则有向量形式改为矩阵形式：
@@ -71,6 +69,6 @@ $$\Sigma^{\star} = \Sigma V, \Omega^{\star} = \Omega W$$
 
 * 对于LSA这种distributional embedding而言，所有任务均有极大的提升。
 * 对于ENN、Skip-Gram这种distributed embedding而言，提升反而不是很大。
-* 据白雪峰大佬说，用CCA融合双语语料做单语任务确实不会很好，表现不一；在做双语任务（如跨语言分类、抽双语词典）上会效果比较好。很可能CCA融合的双语语料对原有的单语词向量反而造成了破坏。
+* 据雪峰大佬说，用CCA融合双语语料做单语任务确实不会很好，表现不一；在做双语任务（如跨语言分类、抽双语词典）上会效果比较好。很可能CCA融合的双语语料对原有的单语词向量反而造成了破坏。
 
 * Our work suggests that multilingual evidence is an important resource even for purely monolingual, semantically aware applications.
