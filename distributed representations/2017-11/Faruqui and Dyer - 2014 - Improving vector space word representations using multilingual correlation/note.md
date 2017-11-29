@@ -1,3 +1,5 @@
+# Improving vector space word representations using multilingual correlation
+
 ## Introduction
 
 * **distributional hypothesis (Harris, 1954):**  the meaning of words is evidenced by the contexts they occur in.
@@ -28,7 +30,7 @@ $$\rho(x^{\prime}, y^{\prime}) = \frac{E[x^{\prime} y^{\prime}]}{\sqrt{E[{x^{\pr
 $$v, w = CCA(x,y)=argmax_{v,w} \rho(xv, yw)$$
 * 现在一组词拓展成双语语料中所有对齐的词，则有向量形式改为矩阵形式：
 $$V,W = CCA(\Sigma^{\prime}, \Omega^{\prime})$$
-* 注意**共同空间**的维数$d=min\{rank(V), rank(W)\}$，所以共同空间的维数一定比原先两种语言各自embedding空间的维度要小。
+* 注意**共同空间**的维数$d=min(rank(V), rank(W))$，所以共同空间的维数一定比原先两种语言各自embedding空间的维度要小。
 * CCA同时解决了双语语料中没有对齐词的问题，只需将学得的V、W矩阵运用到这些词上即可。
 $$\Sigma^{\star} = \Sigma V, \Omega^{\star} = \Omega W$$
 * 也可以像PCA那样在d维只取前k个相关的维度。（实验结果表明大约取前80%的维度最好。）
