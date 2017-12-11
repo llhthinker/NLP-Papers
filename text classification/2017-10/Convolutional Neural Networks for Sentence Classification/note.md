@@ -6,7 +6,7 @@ $$X_{1:n}=x_1\oplus x_2\oplus \dots \oplus x_n$$
 - 一个包含$h$个的词的词窗口表示为：$$X_{i:i+h-1}\in\Re^{hk}$$
 - 一个filter是大小为$h*k$的矩阵，表示为:$$W\in\Re^{hk}$$
 - 通过一个filter作用一个词窗口提取可以提取一个特征$c_i$，如下：
-$$c_i=f(W\centerdot X_{i:i+h-1}+b)$$其中，$b\in\Re$是bias值，$f$为激活函数如Relu等。
+$$c_i=f(W \cdot X_{i:i+h-1}+b)$$其中，$b\in\Re$是bias值，$f$为激活函数如Relu等。
 - 卷积操作：通过一个filter在整个句子上从句首到句尾扫描一遍，提取每个词窗口的特征，可以得到一个特征图(feature map) $c\in\Re^{n-h+1}$，表示如下(这里默认不对句子进行padding)：
 $$c= [c_1, c_2, \dots , c_{n-h+1}]$$
 - 池化操作：对一个filter提取到的feature map进行max pooling，得到$\hat{c}\in\Re$即：
@@ -14,7 +14,7 @@ $$\hat{c}=max(c)$$
 - 若有$m$个filter，则通过一层卷积、一层池化后可以得到一个长度为$m$的向量$z\in\Re^m$:
 $$z = [\hat{c}_1, \hat{c}_2, \dots, \hat{c}_m]$$
 - 最后，将向量$z$输入到全连接层，得到最终的特征提取向量$y$ (这里的$W$为全连接层的权重，注意与filter进行区分): 
-$$y=W*z+b$$
+$$y=W \cdot z+b$$
 ## 优化
 ### 词向量
 - 随机初始化 （CNN-rand）
@@ -27,7 +27,7 @@ $$y=W*z+b$$
     - 另一种窗口大小$h=3$（黄色框），卷积后的向量维度为$n-h+1=6$
 ### 正则化
 - Dropout: 对全连接层的输入$z$向量进行dropout
-$$y=W*(z \circ r)+b$$其中$r\in\Re^m$为**masking**向量（每个维度值非0即1，可以通过伯努利分布随机生成），和向量$z$进行元素与元素对应相乘，让$r$向量值为0的位置对应的$z$向量中的元素值失效（梯度无法更新）。
+$$y=W \cdot (z \circ r)+b$$其中$r\in\Re^m$为**masking**向量（每个维度值非0即1，可以通过伯努利分布随机生成），和向量$z$进行元素与元素对应相乘，让$r$向量值为0的位置对应的$z$向量中的元素值失效（梯度无法更新）。
 - L2-norms: 对L2正则化项增加限制：当正则项$\lVert W \rVert_2 > s$时, 令$\lVert W \rVert_2 = s$，其中$s$为超参数。
 ## 实验及讨论
 ### 实验设置
