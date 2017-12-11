@@ -42,7 +42,7 @@
 
   $$q_{j|i} = \frac{exp(-||y_i-y_j||^2)}{\sum_{k\neq i}exp(-||y_i-y_k||^2)}$$
 
-  注意：1）$\sigma_i$ 若取其他值，对结果影响仅仅是缩放而已。
+  注意：若方差取其他值，对结果影响仅仅是缩放而已。
 
 * If the map points $y_i$ and $y_j$ correctly model the similarity between the high-dimensional data points $x_i$ and $x_j$, the conditional probabilities $p_{j|i}$ and $q_{j|i}$ will be equal.
 
@@ -70,15 +70,15 @@
 
   * It is not likely that there is a single value of $\sigma_i$ that is optimal for all data points in the data set because the density of the data is likely to vary. **In dense regions, small $\sigma_i$, while in sparse region, large $\sigma_i$.**
 
-  * 让条件分布$P_i$的困惑度等于用户预定义的困惑度即可。
+  * Every $\sigma_i$ is either set by hand （不忍吐槽，原话见于(Hinton and Roweis, 2003)） or found by a simple binary search (Hinton and Roweis, 2003) or by a very robust root-finding method (Vladymyrov and Carreira-Perpinan, 2013) 
+
+  * 使用算法来确定$\sigma_i$要求用户预设困惑度（perplexity）。然后算法找到合适的$\sigma_i$值让条件分布$P_i$的困惑度等于用户预定义的困惑度即可。
 
     $Perp(P_i) = 2^{H(P_i)} = 2^{-\sum_j p_{j|i} log_2 p_{j|i}}$
 
     注意：困惑度设的大，则显然$\sigma_i$也大。The perplexity increases **monotonically** with the variance $\sigma_i$.
 
   * The perplexity can be interpreted as a smooth measure of **the effective number of neighbors**. The performance of SNE is fairly robust to changes in the perplexity, and **typical values are between 5 and 50.**
-
-  * 这样，每一个$x_i$的$\sigma_i$就可以通过简单的 binary search (Hinton and Roweis, 2003) 或者鲁棒性非常高的 root-finding method (Vladymyrov and Carreira-Perpinan, 2013) 算法找到。找到的$\sigma_i$即具有如上所述的性质：数据密集的区域数值较小，数据稀疏的区域数值较大。
 
 ## t-SNE
 
@@ -107,7 +107,7 @@
 
 - **“crowding problem”**: the area of the two-dimensional map that is available to accommodate **moderately distant datapoints** will not be nearly large enough compared with the area available to accommodate **nearby datapoints**. 
 
-  这句话的意思是：在二维映射空间中，能容纳**（高维空间中的）中等距离间隔点**的空间，不会比 能容纳**（高维空间中的）相近点**的空间大太多。
+  这句话的意思是：在二维映射空间中，能容纳**（高维空间中的）中等距离间隔点**的空间，不会比能容纳**（高维空间中的）相近点**的空间大太多。
   换言之，哪怕高维空间中离得较远的点，在低维空间中留不出这么多空间来映射。于是到最后高维空间中远的、近的点，在低维空间中统统被塞在了一起，这就叫做“**拥挤问题（Crowding Problem）**”。
 
 - Note that **the crowding problem is not specific to SNE**, but that it also occurs in other local techniques for multidimensional scaling such as Sammon mapping.
@@ -124,9 +124,9 @@
 
 * Instead of Gaussian, use a **heavy-tailed distribution (like Student-t distribution)** to convert distances into probability scores in **low dimensions**. This way **moderate** distance in high-dimensional space can be modeled by **larger** distance in low-dimensional space.
 
-* **Student's t-distribution**
+* **[Student's t-distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution) **
 
-  * [Student's t-distribution](https://en.wikipedia.org/wiki/Student%27s_t-distribution) has the probability density function given by
+  * **Student's t-distribution** has the probability density function given by
 
     $$f(t)={\frac {\Gamma ({\frac {\nu +1}{2}})}{{\sqrt {\nu \pi }}\,\Gamma ({\frac {\nu }{2}})}}\left(1+{\frac {t^{2}}{\nu }}\right)^{\!-{\frac {\nu +1}{2}}}$$
 

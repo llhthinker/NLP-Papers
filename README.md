@@ -8,7 +8,14 @@ Reading natural language processing papers
     - 正在读或已读paper及其note
 
 ## Papers and Notes
+### Machine Translation
+
+* 2017-12
+  * Oda et al. - 2017 - **Neural Machine Translation via Binary Code Predict** [[pdf]](https://arxiv.org/abs/1704.06918) 
+  * Kalchbrenner et al. - 2016 - **Neural machine translation in linear time** [[pdf]](https://arxiv.org/abs/1610.10099)
+
 ### Distributed Representations
+
 - 2017-11
   - Faruqui and Dyer - 2014 - **Improving vector space word representations using multilingual correlation** [[pdf]](http://repository.cmu.edu/lti/31/)  [[note]](./distributed%20representations/2017-11/Faruqui%20and%20Dyer%20-%202014%20-%20Improving%20vector%20space%20word%20representations%20using%20multilingual%20correlation/note.md)
   - Maaten and Hinton - 2008 - **Visualizing data using t-SNE** [[pdf]](http://www.jmlr.org/papers/v9/vandermaaten08a.html) [[pdf (annotated)]](./distributed%20representations/2017-11/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE.pdf) [[note]](./distributed%20representations/2017-11/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE/note.md)
