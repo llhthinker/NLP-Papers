@@ -55,7 +55,7 @@ $$y=W \cdot (z \circ r)+b$$其中$r\in\Re^m$为**masking**向量（每个维度�
 - 为什么CNN能够用于文本分类（NLP）？
     - [filter相当于N-gram ？](https://www.zhihu.com/question/38544669) 
     - filter只提取局部特征？全局特征怎么办？可以融合吗？ 
-- 超参数怎么调？
+- 超参数怎么调？参见[A Sensitivity Analysis of (and Practitioners' Guide to) Convolutional Neural Networks for Sentence Classification](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-10/A%20Sensitivity%20Analysis%20of%20(and%20Practitioners%E2%80%99%20Guide%20to)%20Convolutional/note.md)
     - 用什么样的词向量
     - filter窗口大小、数量
     - 激活函数 (tanh, relu, ...)
