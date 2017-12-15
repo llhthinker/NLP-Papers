@@ -5,10 +5,10 @@
 ### Word Representation Learning
 使用双向RNN分别学习当前词$w_i$的左上下文表示$c_l(w_i)$和右上下文表示$c_r(w_i)$，再与当前词自身的表示$e(w_i)$连接，构成卷积层的输入$x_i$。具体如下:
 $$
-\begin{align}
+\begin{align} 
 c_l(w_i) = f(W^{(l)}c_l(w_{i-1})+W^{(sl)}e(w_{i-1})) \tag{1} \\
 c_r(w_i) = f(W^{(r)}c_r(w_{i-1})+W^{(sr)}e(w_{i-1})) \tag{2} \\
-x_i = [c_l(w_i);e(w_i);c_r(w_i)]\tag{3} 
+x_i = [c_l(w_i);e(w_i);c_r(w_i)]\tag{3} \\
 \end{align}
 $$
 然后将$x_i$作为$w_i$的表示，输入到激活函数为tanh,kernel size为1的卷积层，得到$w_i$的潜在语义向量(latent semantic vector)$y^{(2)}_i$,具体如下：
@@ -16,7 +16,7 @@ $$y^{(2)}_i=tanh(W^{(2)}x_i+b^{(2)}) \tag{4}$$
 将kernel size设置为1是因为$x_i$中已经包含$w_i$左右上下文的信息，无需再使用窗口大于1的filter进行特征提取。但是需要说明的是，在实践中仍然可以同时使用多种kernel size的filter，如[1, 2, 3]，可能取得更好的效果，一种可能的解释是窗口大于1的filter强化了$w_i$的左右最近的上下文信息。此外，实践中可以使用更复杂的RNN来捕获$w_i$的上下文信息如LSTM和GRU等。
 
 ### Text Representation Learning
-经过卷积层后，获得了所有词的表示，然后在经过最大池化层和全连接层得到文本的表示，最后通过softmax层进行分类。具体如下：
+经过卷积层后，获得了所有词的表示，然后在经过最大池化层和全连接层得到文本的表示，最后通过softmax层进行分类。具体如下：</br>
 (1) Max-pooling layer
 $$y^{(3)}=\max \limits_{i=1,2, \dots ,n} y^{(2)}_i \tag{5}$$
 (2) Fully connected layer
@@ -52,7 +52,7 @@ $$p_i=\frac{\exp(y^{(4)}_i)}{\sum_{k=1}^n \exp(y^{(4)}_k)} \tag{7}$$
     - By contrast, RecursiveNN can only capture contextual information using semantic composition under the constructed textual tree, which heavily depends on the performance of tree construction. 
     - A lower time complexity [O(n)] than the recursive-based approaches [O(n2)]
 - **RCNN vs. CFG and C&J: The RCNN可以捕获更长的模式(patterns)**
-    - The RCNN does not require handcrafted feature sets, which means that it might be usefulin low-resource languages. 
+    - The RCNN does not require handcrafted feature sets, which means that it might be useful in low-resource languages. 
 - **RCNN vs. CNN:  在该论文的所有实验数据集上，RCNN比CNN更好**
     - The reason is the recurrent structure in the RCNN captures contextual information better than window-based structure in CNNs. 
 
