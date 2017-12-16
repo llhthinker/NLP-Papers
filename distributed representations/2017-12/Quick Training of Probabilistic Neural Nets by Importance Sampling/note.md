@@ -51,10 +51,15 @@ $$E[f]=\int f(z)p(z)\mathrm{d}z=\int f(z)\frac{p(z)}{q(z)}q(z)\mathrm{d}z\simeq 
 重要性采样的关键就在这里，把对f(x)不好求的期望，变成了一个在另一个分布下相对好求的期望。
 
 详见论文
+
 ##参考文献
+
 https://www.cnblogs.com/xbinworld/p/4266146.html
+
 http://blog.csdn.net/tudouniurou/article/details/6277526
+
 https://zhuanlan.zhihu.com/p/29934206
+
 http://www.jianshu.com/p/22fb279aa16b
 
 
