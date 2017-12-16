@@ -35,9 +35,9 @@ Deep Averaging Networks (**DAN**)是在**NBOW** model的基础上，通过增加
 
 $$
 \begin{align}
-r_w \sim Bernoulli(p) \\
-\hat{X} = \{w|w \in X and r_w  > 0\} \\
-z = g(w \in X ) = \frac{\sum_{w \in \hat{X}}v_w}{|\hat{X}|} \\
+r_w \sim Bernoulli(p)  ; \\ 
+\hat{X} = \{w|w \in X and r_w  > 0\} ;  \\
+z = g(w \in X ) = \frac{\sum_{w \in \hat{X}}v_w}{|\hat{X}|} ; \\
 \end{align}
 $$
 

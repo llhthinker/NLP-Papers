@@ -31,8 +31,8 @@ Reading natural language processing papers
   - Zhang and Wallace - 2015 - **A Sensitivity Analysis of (and Practitioners' Guide to) Convolutional Neural Networks for Sentence Classification** [[pdf]](https://arxiv.org/abs/1510.03820) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-10/A%20Sensitivity%20Analysis%20of%20(and%20Practitioners%E2%80%99%20Guide%20to)%20Convolutional/A%20Sensitivity%20Analysis%20of%20(and%20Practitioners%E2%80%99%20Guide%20to)%20Convolutional.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-10/A%20Sensitivity%20Analysis%20of%20(and%20Practitioners%E2%80%99%20Guide%20to)%20Convolutional/note.md)
   - Zhang et al. - 2015 - **Character-level convolutional networks for text classification** [[pdf]](http://papers.nips.cc/paper/5782-character-level-convolutional-networks-fo) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-10/Character-level%20Convolutional%20Networks%20for%20Text%20Classification/Character-level%20Convolutional%20Networks%20for%20Text%20Classification.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-10/Character-level%20Convolutional%20Networks%20for%20Text%20Classification/note.md)
   - Lai et al. - 2015 - **Recurrent Convolutional Neural Networks for Text Classification** [[pdf]](http://www.nlpr.ia.ac.cn/cip/~liukang/liukangPageFile/Recurrent%20Convolutional%20Neural%20Networks%20for%20Text%20Classification.pdf) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-10/Recurrent%20Convolutional%20Neural%20Networks%20for%20Text%20Classification/Recurrent%20Convolutional%20Neural%20Networks%20for%20Text%20Classification.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-10/Recurrent%20Convolutional%20Neural%20Networks%20for%20Text%20Classification/note.md)
-  - ...
 - 2017-11
+  - Iyyer et al. - 2015 - **Deep unordered composition rivals syntactic methods for Text Classification** [[pdf]](http://www.aclweb.org/anthology/P15-1162) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-11/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-11/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification/note.md)
   - ...
 
 ## References
@@ -42,10 +42,10 @@ Reading natural language processing papers
   - [An overview of gradient descent optimization algorithms](http://ruder.io/optimizing-gradient-descent/)
 ### Distributed Representations
 - word2vec
-	- [word2vec(tensorflow)](https://github.com/llhthinker/udacity-deeplearning/blob/master/5_word2vec.ipynb)
-	- [subword-based word vector](https://github.com/facebookresearch/fastText)
+  - [word2vec(tensorflow)](https://github.com/llhthinker/udacity-deeplearning/blob/master/5_word2vec.ipynb)
+  - [subword-based word vector](https://github.com/facebookresearch/fastText)
 - doc2vec
-	- [doc2vec(gensim)](https://github.com/jhlau/doc2vec)
+  - [doc2vec(gensim)](https://github.com/jhlau/doc2vec)
 
 ### Language Model
 - [LSTM for Language Model](https://github.com/gaussic/language_model_zh/blob/master/lm_chinese.ipynb)
