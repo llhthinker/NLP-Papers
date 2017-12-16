@@ -18,9 +18,10 @@ $$y^{(2)}_i=tanh(W^{(2)}x_i+b^{(2)}) \tag{4}$$
 ### Text Representation Learning
 经过卷积层后，获得了所有词的表示，然后在经过最大池化层和全连接层得到文本的表示，最后通过softmax层进行分类。具体如下：</br>
 (1) Max-pooling layer
-$$y^{(3)}=\max \limits_{i=1,2, \dots ,n} y^{(2)}_i \tag{5}$$
+$$y^{(3)}=\max \limits_{i=1}^{n} y^{(2)}_i \tag{5}$$
 (2) Fully connected layer
-$$y^{(4)}=W^{(4)}y^{(3)}+b^{(4)} \tag{6} $$
+​            $$y^{(4)}=W^{(4)}y^{(3)}+b^{(4)} \tag{6} $$
+
 (3) Softmax layer
 $$p_i=\frac{\exp(y^{(4)}_i)}{\sum_{k=1}^n \exp(y^{(4)}_k)} \tag{7}$$
 下图为上述过程的一个图解:
