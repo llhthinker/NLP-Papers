@@ -1,5 +1,5 @@
 # Importance Sampling
-##Abstract
+## Abstract
 The paper propose and evaluate sampling-based methods which require network passes only for the observed "**positive example**" and a few sampled **negative example word**s.
 ## Introduction
 * Words can be **efficiently** represented by artificial neural network, where efficiently refers here to the statistical sense, meaning that **generalize well** and have **low perplexity**.
@@ -52,7 +52,7 @@ $$E[f]=\int f(z)p(z)\mathrm{d}z=\int f(z)\frac{p(z)}{q(z)}q(z)\mathrm{d}z\simeq 
 
 详见论文
 
-##参考文献
+## 参考文献
 
 https://www.cnblogs.com/xbinworld/p/4266146.html
 
