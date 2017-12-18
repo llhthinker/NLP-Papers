@@ -11,8 +11,8 @@ Reading natural language processing papers
 ### Machine Translation
 
 * 2017-12
-  * Oda et al. - 2017 - **Neural Machine Translation via Binary Code Predict** [[pdf]](https://arxiv.org/abs/1704.06918) 
-  * Kalchbrenner et al. - 2016 - **Neural machine translation in linear time** [[pdf]](https://arxiv.org/abs/1610.10099)
+  * Oda et al. - 2017 - **Neural Machine Translation via Binary Code Predict** [[pdf]](https://arxiv.org/abs/1704.06918) [[note]](./machine%20translation/Oda%20et%20al.%20-%202017%20-%20Neural%20Machine%20Translation%20via%20Binary%20Code%20Prediction/note.md)
+  * Kalchbrenner et al. - 2016 - **Neural machine translation in linear time** [[pdf]](https://arxiv.org/abs/1610.10099) [[pdf (annotated)]](./machine%20translation/Kalchbrenner%20et%20al.%20-%202016%20-%20Neural%20machine%20translation%20in%20linear%20time/Kalchbrenner%20et%20al.%20-%202016%20-%20Neural%20machine%20translation%20in%20linear%20time.pdf) [[note]](./machine%20translation/Kalchbrenner%20et%20al.%20-%202016%20-%20Neural%20machine%20translation%20in%20linear%20time/note.md)
 
 ### Distributed Representations
 
