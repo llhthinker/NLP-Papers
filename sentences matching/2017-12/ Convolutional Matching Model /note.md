@@ -125,7 +125,7 @@
 
   $S^-_Y$: It is hard to find a job, better start polishing your resume.
 
-* Test the matching model on their ability to **pick the original response ** from **four random negatives**.
+* Test the matching model on their ability to **pick the original response from four random negatives**.
 
 * ![experiment 2](./experiment-2.png)
 
