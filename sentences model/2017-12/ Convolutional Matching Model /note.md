@@ -100,12 +100,9 @@
 
 * $S_X$: Although the state has only four votes in the Electoral College, 
 
-  $S_Y^+$: its loss would be a symbolic blow to republican presidential candi
-
-  date Bob Dole.
-  $S_Y^-$: but it failed to garner enough votes to override an expected veto by
-
-  president Clinton.
+  $S_Y^+$: its loss would be a symbolic blow to republican presidential candidate Bob Dole.
+  
+  $S_Y^-$: but it failed to garner enough votes to override an expected veto by president Clinton.
 
 * All models are trained on **3 million** triples and tested on 50K positive pairs.
 
