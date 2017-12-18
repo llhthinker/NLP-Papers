@@ -20,7 +20,6 @@
   layers of convolution and pooling, until reaching a fixed length vectorial representation in the final layer.	
 * We use convolution units with a **local “receptive field”** and **shared weights**, but we design a **large feature map** to adequately model the rich structures in the composition of words.
 * ![model 1](./model 1.png)
-* ![model 1](./model1.png)
 * 如何理解该图片的模型结构？
 * 数学公式详见论文，与常规CNN基本一致。
 
