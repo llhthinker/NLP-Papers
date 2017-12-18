@@ -28,7 +28,7 @@ $\varepsilon()$ is a parametrized function which is **low** for plausible config
 
 * To obtain conditional probabilities, we **normalize** the exponentiated engergies:
 
-$$P(w_{t}|h_{t})=\frac{e^{-\varepsilon (w_{t},h_{t})}}{\sum _{w'}e^{-\varepsilon (w',h_{t})}}$$
+$$P(w_t|h_t)=\frac{e^{-\varepsilon (w_t,h_t)}}{\sum _w'e^{-\varepsilon (w',h_t)}}$$
 
 $$P(Y=y|X=x)=\frac{e^{-\varepsilon (y,x)}}{\sum _{y'}e^{-\varepsilon (y',x)}}$$
 
