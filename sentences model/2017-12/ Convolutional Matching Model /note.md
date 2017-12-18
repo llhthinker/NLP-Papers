@@ -43,7 +43,7 @@
 * 如何跟之前的结构联系起来？
 * 浅层CNN拥有 local convoytions 和 a global pooling。Since the sentence-
   level sequential order is inevitably **lost in the global pooling**, the model is **incapable of modeling more complicated structures.**
-  * 浅层CNN的该模型的特殊情况。		
+* 浅层CNN是该模型的特殊情况。		
 
 ## Convolutional Matching Models
 
