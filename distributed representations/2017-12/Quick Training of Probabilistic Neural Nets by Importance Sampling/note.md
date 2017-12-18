@@ -27,6 +27,7 @@ $$\varepsilon(w_{t},h_{t})=b_{w_{t}}+V_{w_{t}}\cdot a$$
 $\varepsilon()$ is a parametrized function which is **low** for plausible configurations of $(w_{t},h_{t})$, and **high** for improbable ones.
 
 * To obtain conditional probabilities, we **normalize** the exponentiated engergies:
+
 $$P(w_{t}|h_{t})=\frac{e^{-\varepsilon (w_{t},h_{t})}}{\sum _{w'}e^{-\varepsilon (w',h_{t})}}$$
 
 $$P(Y=y|X=x)=\frac{e^{-\varepsilon (y,x)}}{\sum _{y'}e^{-\varepsilon (y',x)}}$$
