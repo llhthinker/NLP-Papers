@@ -43,7 +43,7 @@
 * 如何跟之前的结构联系起来？
 * 浅层CNN拥有 local convoytions 和 a global pooling。Since the sentence-
   level sequential order is inevitably **lost in the global pooling**, the model is **incapable of modeling more complicated structures.**
-* 浅层CNN是该模型的特殊情况。		
+* 浅层CNN是该模型的特殊情况。	
 
 ## Convolutional Matching Models
 
@@ -101,7 +101,7 @@
 * $S_X$: Although the state has only four votes in the Electoral College, 
 
   $S_Y^+$: its loss would be a symbolic blow to republican presidential candidate Bob Dole.
-  
+
   $S_Y^-$: but it failed to garner enough votes to override an expected veto by president Clinton.
 
 * All models are trained on **3 million** triples and tested on 50K positive pairs.

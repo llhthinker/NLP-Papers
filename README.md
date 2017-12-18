@@ -20,6 +20,8 @@ Reading natural language processing papers
   - Faruqui and Dyer - 2014 - **Improving vector space word representations using multilingual correlation** [[pdf]](http://repository.cmu.edu/lti/31/)  [[note]](./distributed%20representations/2017-11/Faruqui%20and%20Dyer%20-%202014%20-%20Improving%20vector%20space%20word%20representations%20using%20multilingual%20correlation/note.md)
   - Maaten and Hinton - 2008 - **Visualizing data using t-SNE** [[pdf]](http://www.jmlr.org/papers/v9/vandermaaten08a.html) [[pdf (annotated)]](./distributed%20representations/2017-11/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE.pdf) [[note]](./distributed%20representations/2017-11/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE/note.md)
   - Le and Mikolov - 2014 - **Distributed representations of sentences and documents** [[pdf]](http://proceedings.mlr.press/v32/le14.pdf) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Distributed%20Representations%20of%20Sentences%20and%20Documents/Distributed%20Representations%20of%20Sentences%20and%20Documents.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Distributed%20Representations%20of%20Sentences%20and%20Documents/note.md) 
+- 2017-12
+  - **Quick Training of Probabilistic Neural Nets by Importance Sampling** [pdf]() [pdf(annotated)]() [note]()
 ### Language Model
 - 2017-11
   - ...
@@ -35,6 +37,11 @@ Reading natural language processing papers
 - 2017-11
   - Iyyer et al. - 2015 - **Deep unordered composition rivals syntactic methods for Text Classification** [[pdf]](http://www.aclweb.org/anthology/P15-1162) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-11/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-11/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification/note.md)
   - ...
+
+### Sentences Matching
+
+* 2017-12
+  * Hu et al. - 2014 - **Convolutional neural network architectures for mat.pdf** [pdf](https://papers.nips.cc/paper/5550-convolutional-neural-network-architectures-for-matching-natural-language-sentences.pdf) [pdf (annotated)](https://github.com/llhthinker/NLP-Papers/blob/master/sentences%20matching/2017-12/%20Convolutional%20Matching%20Model%20/Convolutional%20Neural%20Network%20Architectures%20for%20Matching%20Natural%20Language%20Sentences.pdf) [note](https://github.com/llhthinker/NLP-Papers/blob/master/sentences%20matching/2017-12/%20Convolutional%20Matching%20Model%20/note.md)
 
 ## References
 - [Neural Networks for NLP (CS11-747 Fall 2017 @ CMU)](http://www.phontron.com/class/nn4nlp2017/schedule.html)
