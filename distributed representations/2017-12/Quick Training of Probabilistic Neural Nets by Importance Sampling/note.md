@@ -44,8 +44,10 @@ How to sample: **Importance Sampling**
 > Importance Sampling 也是借助了容易抽样的分布q（proposal distribution）来解决原始分布p难以找到的问题。
 $$E[f]=\int f(z)p(z)\mathrm{d}z=\int f(z)\frac{p(z)}{q(z)}q(z)\mathrm{d}z\simeq \frac{1}{L}\sum_{l=1}^{L}\frac{p(z^{(l)})}{q(z^{(l)})}f(z^{l})$$
 其中$\frac{p(z)}{q(z)}$可以看作importance weight。要引入什么样的分布q才会让采样的效果变得更好呢？直观的感觉是，样本的方差越小期望收敛速率越快。比如一次采样是 0, 一次采样是 1000, 平均值是 500,这样采样效果很差，如果一次采样是 499, 一次采样是 501, 你说期望是 500,可信度还比较高。在上式中，我们目标是 $p×f/q$ 方差越小越好，所以 $|p×f|$ 大的地方，proposal distribution $q(z)$ 也应该大。举个稍微极端的例子：
-![s](http://images.cnitblog.com/blog/533521/201310/25225509-8492f85ebc134b3cbc728a8eec4068dd.png)
-第一个图表示 $p$ 分布， 第二个图的阴影区域 $f = 1$，非阴影区域 $f = 0$, 那么一个良好的 $q$ 分布应该在左边箭头所指的区域有很高的分布概率，因为在其他区域的采样计算实际上都是无效的。这表明 Importance Sampling 有可能比用原来的$p$ 分布抽样更加有效。
+
+> ![s](http://images.cnitblog.com/blog/533521/201310/25225509-8492f85ebc134b3cbc728a8eec4068dd.png)
+
+> 第一个图表示 $p$ 分布， 第二个图的阴影区域 $f = 1$，非阴影区域 $f = 0$, 那么一个良好的 $q$ 分布应该在左边箭头所指的区域有很高的分布概率，因为在其他区域的采样计算实际上都是无效的。这表明 Importance Sampling 有可能比用原来的$p$ 分布抽样更加有效。
 
 引用2:
 >让我们回顾一下期望的求法 $E(f(x))=\int (p(x)*f(x))\mathrm{d}x$。那么，现在我们引入另一个概率分布s(x)，相比于p(x)，s(x)是非常简单能找到cdf的。那么我们变形一下E(f(x)) = sum( p(x) * f(x) / s(x) * s(x) ) dx ，再仔细看看，这个求f(x)的期望变成了，求在s(x)分布下，p(x)*f(x)/s(x)的期望。
