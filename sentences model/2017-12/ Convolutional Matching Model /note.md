@@ -83,7 +83,7 @@
 
 ## Training
 
-* $$e(x,y^+,y^-; \theta)=max(0,1+s(x,y^-)-s(x,y^+))$$
+* $e(x,y^+,y^-; \theta)=max(0,1+s(x,y^-)-s(x,y^+))$
 
 
 * 详细超参数见论文
@@ -96,7 +96,7 @@
 
 * $S_X$, $S_Y$, divided by one comma. The task is then to **recover** the original second clause for any given first clause.
 
-  * We deliberately make the task harder by using **negative second clauses** similar to the original ones, both in training and testing.
+* We deliberately make the task harder by using **negative second clauses** similar to the original ones, both in training and testing.
 
 * $S_X$: Although the state has only four votes in the Electoral College, 
 
@@ -112,14 +112,13 @@
 * ![experiment 1](./experiment-1.png)
 
 
-  ​	
 
 ### Experiment II: Matching A Response to A Tweet
 
 * We trained our model with **4.5 million** original (tweet, response)
   pairs collected from Weibo.
 
-  * Compared to Experiment I, the writing style is obviously more **free and informal**. 
+* Compared to Experiment I, the writing style is obviously more **free and informal**. 
 
 * For each positive pair, we find ten random responses as negative examples, rendering **45 million triples** for training.
 
