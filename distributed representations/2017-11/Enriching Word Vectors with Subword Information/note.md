@@ -16,6 +16,6 @@
 
 - **模型优点**: 融入subword信息的主要优点是**允许在单词之间共享subword表示，这样就有助于更好地学习到低频词的可靠表示**。
 
-  - 注意：和论文[Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation]() 中的方法相比，本篇论文并不能表示未登录词，因为在词向量的形成过程中仍需要词本身。
+  - 注意：和论文[Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Finding%20Function%20in%20Form%20Compositional%20Character%20Models/note.md) 中的方法相比，本篇论文并不能表示未登录词，因为在词向量的形成过程中仍需要词本身。
 
 - [fastText](https://github.com/facebookresearch/fastText) 包含了该篇论文的具体实现。**对于一些任务而言，预训练使用fastText可能比传统的word2vec（如gensim中的实现）要好**。
