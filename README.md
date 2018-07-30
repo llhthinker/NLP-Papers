@@ -1,29 +1,7 @@
 # NLP-Papers
-Reading natural language processing papers
-
-## 文件夹命名规则
-- 类别
-  - 未读paper
-  - 年-月
-    - 正在读或已读paper及其note
-
+[TOC]
 ## Papers and Notes
-### Machine Translation
-
-* 2017-12
-  * Oda et al. - 2017 - **Neural Machine Translation via Binary Code Predict** [[pdf]](https://arxiv.org/abs/1704.06918) [[note]](./machine%20translation/Oda%20et%20al.%20-%202017%20-%20Neural%20Machine%20Translation%20via%20Binary%20Code%20Prediction/note.md)
-  * Kalchbrenner et al. - 2016 - **Neural machine translation in linear time** [[pdf]](https://arxiv.org/abs/1610.10099) [[pdf (annotated)]](./machine%20translation/Kalchbrenner%20et%20al.%20-%202016%20-%20Neural%20machine%20translation%20in%20linear%20time/Kalchbrenner%20et%20al.%20-%202016%20-%20Neural%20machine%20translation%20in%20linear%20time.pdf) [[note]](./machine%20translation/Kalchbrenner%20et%20al.%20-%202016%20-%20Neural%20machine%20translation%20in%20linear%20time/note.md)
-* 2018-05
-  * Sutskever et al. - 2014 - **Sequence to Sequence Learning with Neural Networks** [[pdf]](http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural)
-  * Cho et al. - 2014 - **Learning Phrase Representations using RNN Encoder-Decoder for NMT** [[pdf]](https://arxiv.org/abs/1406.1078) 
-  * Bahdanau et al. - 2014 - **NMT by Jointly Learning to Align and Translate ** [[pdf]](https://arxiv.org/abs/1409.0473)
-  * Luong et al. - 2015 - **Effective Approaches to Attention-based NMT** [[pdf]](https://arxiv.org/abs/1508.04025)
-* 2018-06
-  * Gehring et al. - 2017 - **Convolutional sequence to sequence learning** [[pdf]](https://arxiv.org/abs/1705.03122)
-  * Vaswani et al. - 2017 - **Attention is all you need** [[pdf]](https://arxiv.org/abs/1706.03762)
-
 ### Distributed Representations
-
 - 2017-11
   - Faruqui and Dyer - 2014 - **Improving vector space word representations using multilingual correlation** [[pdf]](http://repository.cmu.edu/lti/31/)  [[note]](./distributed%20representations/2017-11/Faruqui%20and%20Dyer%20-%202014%20-%20Improving%20vector%20space%20word%20representations%20using%20multilingual%20correlation/note.md)
   - Maaten and Hinton - 2008 - **Visualizing data using t-SNE** [[pdf]](http://www.jmlr.org/papers/v9/vandermaaten08a.html) [[pdf (annotated)]](./distributed%20representations/2017-11/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE.pdf) [[note]](./distributed%20representations/2017-11/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE/note.md)
@@ -36,6 +14,37 @@ Reading natural language processing papers
 - 2017-11
   - Bengio et al. - 2003 - **A neural probabilistic language model** [[pdf]](http://www.jmlr.org/papers/v3/bengio03a.html)
   - Press and Wolf - 2016 - **Using the output embedding to improve language model** [[pdf]](https://arxiv.org/abs/1608.05859)
+
+### Machine Translation
+* 2017-12
+  * Oda et al. - 2017 - **Neural Machine Translation via Binary Code Predict** [[pdf]](https://arxiv.org/abs/1704.06918) [[note]](./machine%20translation/Oda%20et%20al.%20-%202017%20-%20Neural%20Machine%20Translation%20via%20Binary%20Code%20Prediction/note.md)
+  * Kalchbrenner et al. - 2016 - **Neural machine translation in linear time** [[pdf]](https://arxiv.org/abs/1610.10099) [[pdf (annotated)]](./machine%20translation/Kalchbrenner%20et%20al.%20-%202016%20-%20Neural%20machine%20translation%20in%20linear%20time/Kalchbrenner%20et%20al.%20-%202016%20-%20Neural%20machine%20translation%20in%20linear%20time.pdf) [[note]](./machine%20translation/Kalchbrenner%20et%20al.%20-%202016%20-%20Neural%20machine%20translation%20in%20linear%20time/note.md)
+* 2018-05
+  * Sutskever et al. - 2014 - **Sequence to Sequence Learning with Neural Networks** [[pdf]](http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural)
+  * Cho et al. - 2014 - **Learning Phrase Representations using RNN Encoder-Decoder for NMT** [[pdf]](https://arxiv.org/abs/1406.1078) 
+  * Bahdanau et al. - 2014 - **NMT by Jointly Learning to Align and Translate** [[pdf]](https://arxiv.org/abs/1409.0473)
+  * Luong et al. - 2015 - **Effective Approaches to Attention-based NMT** [[pdf]](https://arxiv.org/abs/1508.04025)
+* 2018-06
+  * Gehring et al. - 2017 - **Convolutional sequence to sequence learning** [[pdf]](https://arxiv.org/abs/1705.03122)
+  * Vaswani et al. - 2017 - **Attention is all you need** [[pdf]](https://arxiv.org/abs/1706.03762)
+
+### Question Answering
+
+* 2018-03
+  * Wang and Jiang. - 2016 - **Machine Comprehension Using Match-LSTM and Answer Pointer** [[pdf](https://arxiv.org/abs/1608.07905)]
+  * Seo et al. - 2016 - **Bidirectional Attention Flow for Machine Comprehension** [[pdf](https://arxiv.org/abs/1611.01603)] 
+  * Cui et al. - 2016 - **Attention-over-Attention Neural Networks for Reading Comprehension** [[pdf](https://arxiv.org/abs/1607.04423)]
+* 2018-04
+  * Clark and Gardner. - 2017 - **Simple and Effective Multi-Paragraph Reading Comprehension** [[pdf](https://arxiv.org/abs/1710.10723)]
+  * Wang et al. - 2017 - **Gated Self-Matching Networks for Reading Comprehension and Question Answering** [[pdf](http://www.aclweb.org/anthology/P17-1018)]
+  * Yu et al. - 2018 - **QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension** [[pdf](https://arxiv.org/abs/1804.09541)] 
+
+### Sentences Matching
+
+* 2017-12
+  * Hu et al. - 2014 - **Convolutional neural network architectures for Matching Natural Language Sentences**  [[pdf]](https://papers.nips.cc/paper/5550-convolutional-neural-network-architectures-for-matching-natural-language-sentences.pdf) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/sentences%20matching/2017-12/%20Convolutional%20Matching%20Model%20/Convolutional%20Neural%20Network%20Architectures%20for%20Matching%20Natural%20Language%20Sentences.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/sentences%20matching/2017-12/Convolutional%20Matching%20Model/note.md)
+
+
 ### Text Classification
 - 2017-09
   - Joulin et al. - 2016 - **Bag of tricks for efficient text classification** [[pdf]](https://arxiv.org/abs/1607.01759v3) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-09/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-09/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification/note.md)
@@ -48,10 +57,6 @@ Reading natural language processing papers
 - 2017-11
   - Iyyer et al. - 2015 - **Deep unordered composition rivals syntactic methods for Text Classification** [[pdf]](http://www.aclweb.org/anthology/P15-1162) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-11/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-11/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification/note.md)
 
-### Sentences Matching
-
-* 2017-12
-  * Hu et al. - 2014 - **Convolutional neural network architectures for mat.pdf** [[pdf]](https://papers.nips.cc/paper/5550-convolutional-neural-network-architectures-for-matching-natural-language-sentences.pdf) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/sentences%20matching/2017-12/%20Convolutional%20Matching%20Model%20/Convolutional%20Neural%20Network%20Architectures%20for%20Matching%20Natural%20Language%20Sentences.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/sentences%20matching/2017-12/Convolutional%20Matching%20Model/note.md)
 
 ## References
 - [Neural Networks for NLP (CS11-747 Fall 2017 @ CMU)](http://www.phontron.com/class/nn4nlp2017/schedule.html)
@@ -67,11 +72,19 @@ Reading natural language processing papers
 
 ### Language Model
 - [LSTM for Language Model](https://github.com/gaussic/language_model_zh/blob/master/lm_chinese.ipynb)
-### Text Classification
-- [fastText](https://github.com/facebookresearch/fastText)
-- [text_classification](https://github.com/brightmart/text_classification)
-- [PyTorchText(知乎看山杯)](https://github.com/chenyuntc/PyTorchText)
 
 ### Machine Translation
 - [OpenNMT-py (in PyTorch)](https://github.com/OpenNMT/OpenNMT-py)
 - [nmt (in TensorFlow)](https://github.com/tensorflow/nmt)
+
+### Question Answering
+
+* [DuReader](https://github.com/baidu/DuReader)
+* [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)
+* [MS MARCO](http://www.msmarco.org/leaders.aspx)
+* [深度学习解决机器阅读理解任务的研究进展](https://zhuanlan.zhihu.com/p/22671467)
+
+### Text Classification
+- [fastText](https://github.com/facebookresearch/fastText)
+- [text_classification](https://github.com/brightmart/text_classification)
+- [PyTorchText(知乎看山杯)](https://github.com/chenyuntc/PyTorchText)
