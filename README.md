@@ -1,12 +1,12 @@
 # NLP-Papers
-- [Distributed Representations](#Distributed Representations)
-- [Language Model](#Language Model)
-- [Machine Translation](#Machine Translation)
-- [Question Answering](#Question Answering)
-- [Relation Extraction](#Relation Extraction)
-- [Sentences Matching](#Sentences Matching)
-- [Text Classification](#Text Classification)
-- [Materials](#Materials)
+- [Distributed Representations](#distributed-representations)
+- [Language Model](#language-model)
+- [Machine Translation](#machine-translation)
+- [Question Answering](#question-answering)
+- [Relation Extraction](#relation-extraction)
+- [Sentences Matching](#sentences-matching)
+- [Text Classification](#text-classification)
+- [Materials](#materials)
 
 ## Papers and Notes
 ### Distributed Representations
