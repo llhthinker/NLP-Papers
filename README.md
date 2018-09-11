@@ -82,9 +82,9 @@
   * Hu et al. - 2014 - **Convolutional neural network architectures for Matching Natural Language Sentences**  [[pdf]](https://papers.nips.cc/paper/5550-convolutional-neural-network-architectures-for-matching-natural-language-sentences.pdf) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/sentences%20matching/2017-12/%20Convolutional%20Matching%20Model%20/Convolutional%20Neural%20Network%20Architectures%20for%20Matching%20Natural%20Language%20Sentences.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/sentences%20matching/2017-12/Convolutional%20Matching%20Model/note.md)
 * 2018-07
   * Nie and Bansal - 2017 - **Shortcut-Stacked Sentence Encoders for Multi-Domain Inference** [[pdf]](https://arxiv.org/abs/1708.02312) [[note]](./sentences%20matching/note.md#shortcut-stacked-sentence-encoders-for-multi-domain-inference)
-  * Wang et al. - 2017 - **Bilateral Multi-Perspective Matching for Natural Language Sentences** [[pdf]](https://arxiv.org/abs/1702.03814) [[note]]()
+  * Wang et al. - 2017 - **Bilateral Multi-Perspective Matching for Natural Language Sentences** [[pdf]](https://arxiv.org/abs/1702.03814) [[note]](./sentences%20matching/note.md#bilateral-multi-perspective-matching-for-natural-language-sentences)
   * Tay et al. - 2017 - **A Compare-Propagate Architecture with Alignment Factorization for Natural Language Inference** [[pdf]](https://arxiv.org/abs/1801.00102)
-  * Chen et al. - 2017 - **Enhanced LSTM for Natural Language Inference** [[pdf]](https://arxiv.org/abs/1609.06038) [[note]]()
+  * Chen et al. - 2017 - **Enhanced LSTM for Natural Language Inference** [[pdf]](https://arxiv.org/abs/1609.06038) [[note]](./sentences%20matching/note.md#enhanced-lstm-for-natural-language-inference)
   * Ghaeini et al. - 2018 - **DR-BiLSTM: Dependent Reading Bidirectional LSTM for Natural Language Inference** [[pdf]](https://arxiv.org/abs/1802.05577)
 * references
   * [The Stanford Natural Language Inference (SNLI) Corpus](https://nlp.stanford.edu/projects/snli/)
