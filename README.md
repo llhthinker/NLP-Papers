@@ -73,6 +73,9 @@
   * Mintz et al. - 2009 - **Distant supervision for relation extraction without labeled data** [[pdf]](https://dl.acm.org/citation.cfm?id=1690287)
   * Zeng et al. - 2015 - **Distant Supervision for Relation Extraction via Piecewise Convolutional Neural Networks** [[pdf]](http://www.aclweb.org/anthology/D15-1203)
   * Lin et al. - 2016 - **Neural Relation Extraction with Selective Attention over Instances** [[pdf]](http://www.aclweb.org/anthology/P16-1200)
+* 2018-09
+  * Ji et al. - 2017 - **Distant Supervision for Relation Extraction with Sentence-Level Attention and Entity Descriptions** [[pdf]](http://www.aaai.org/ocs/index.php/AAAI/AAAI17/paper/download/14491/14078)
+  * Levy et al. - 2017 - **Zero-Shot Relation Extraction via Reading Comprehension** [[pdf]](https://arxiv.org/abs/1706.04115)
 * references
   * [OpenNRE](https://github.com/thunlp/OpenNRE)
 
