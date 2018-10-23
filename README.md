@@ -1,5 +1,6 @@
 # NLP-Papers
 - [Distributed Representations](#distributed-representations)
+- [Entity Recognition](#entity-recognition)
 - [Language Model](#language-model)
 - [Machine Translation](#machine-translation)
 - [Question Answering](#question-answering)
@@ -25,10 +26,21 @@
     - [word2vec(tensorflow)](https://github.com/llhthinker/udacity-deeplearning/blob/master/5_word2vec.ipynb)
     - [subword-based word vector](https://github.com/facebookresearch/fastText)
     - [Chinese Word Vectors 中文词向量](https://github.com/Embedding/Chinese-Word-Vectors)
+    - [Tencent AI Lab Embedding Corpus for **Over 8 Million** Chinese Words and Phrases](https://ai.tencent.com/ailab/nlp/embedding.html)
   - doc2vec
     - [doc2vec(gensim)](https://github.com/jhlau/doc2vec)
   - ELMo
     - [Pre-trained ELMo Representations for Many Languages](https://github.com/HIT-SCIR/ELMoForManyLangs)
+
+### Entity Recognition
+- 2018-10
+  - Lample et al. - 2016 - **Neural Architectures for Named Entity Recognition** [[pdf]](https://arxiv.org/abs/1603.01360)
+  - Ma and Hovy - 2016 - **End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF** [[pdf]](https://arxiv.org/abs/1603.01354)
+  - Peters et al. - 2017 - **Semi-supervised sequence tagging with bidirectional language models** [[pdf]](https://arxiv.org/abs/1705.00108)
+  - Shang et al. - 2018 - **Learning Named Entity Tagger using Domain-Specific Dictionary** [[pdf]](https://arxiv.org/abs/1809.03599)
+- references
+  - [ChineseNER](https://github.com/zjy-ucas/ChineseNER)
+
 ### Language Model
 - 2017-11
   - Bengio et al. - 2003 - **A neural probabilistic language model** [[pdf]](http://www.jmlr.org/papers/v3/bengio03a.html)
@@ -67,6 +79,7 @@
   - [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)
   - [MS MARCO](http://www.msmarco.org/leaders.aspx)
   - [深度学习解决机器阅读理解任务的研究进展](https://zhuanlan.zhihu.com/p/22671467)
+  - [RCPapers: Must-read papers on Machine Reading Comprehension](https://github.com/thunlp/RCPapers)
 
 ### Relation Extraction
 * 2018-08 
@@ -78,6 +91,7 @@
   * Levy et al. - 2017 - **Zero-Shot Relation Extraction via Reading Comprehension** [[pdf]](https://arxiv.org/abs/1706.04115)
 * references
   * [OpenNRE](https://github.com/thunlp/OpenNRE)
+  * [NREPapers: Must-read papers on neural relation extraction (NRE)](https://github.com/thunlp/NREPapers)
 
 ### Sentences Matching
 
@@ -111,6 +125,11 @@
 ### Materials
 
 - [Neural Networks for NLP (CS11-747 Fall 2017 @ CMU)](http://www.phontron.com/class/nn4nlp2017/schedule.html)
+
 - optimization algorithms
+
   - [An overview of gradient descent optimization algorithms](http://ruder.io/optimizing-gradient-descent/)
+
 - [NLP-progress](https://github.com/sebastianruder/NLP-progress)
+
+- [Awesome-Chinese-NLP](https://github.com/crownpku/awesome-chinese-nlp)
