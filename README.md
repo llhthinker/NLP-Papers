@@ -1,6 +1,6 @@
 # NLP-Papers
 - [Distributed Representations](#distributed-representations)
-- [Entity Recognition](#entity-recognition)
+- [Entity Recognition (Sequence Tagging)](#entity-recognition)
 - [Language Model](#language-model)
 - [Machine Translation](#machine-translation)
 - [Question Answering](#question-answering)
@@ -36,6 +36,7 @@
 - 2018-10
   - Lample et al. - 2016 - **Neural Architectures for Named Entity Recognition** [[pdf]](https://arxiv.org/abs/1603.01360)
   - Ma and Hovy - 2016 - **End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF** [[pdf]](https://arxiv.org/abs/1603.01354)
+  - Yang et al. - 2016 - **Transfer Learning for Sequence Tagging with Hierarchical Recurrent Networks** [[pdf]](https://arxiv.org/abs/1703.06345)
   - Peters et al. - 2017 - **Semi-supervised sequence tagging with bidirectional language models** [[pdf]](https://arxiv.org/abs/1705.00108)
   - Shang et al. - 2018 - **Learning Named Entity Tagger using Domain-Specific Dictionary** [[pdf]](https://arxiv.org/abs/1809.03599)
 - references
