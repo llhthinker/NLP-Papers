@@ -3,10 +3,10 @@
 - [Entity Recognition (Sequence Tagging)](#entity-recognition)
 - [Language Model](#language-model)
 - [Machine Translation](#machine-translation)
-- [Question Answering](#question-answering)
+- [Question Answering (Machine Reading Comprehension)](#question-answering)
 - [Relation Extraction](#relation-extraction)
-- [Sentences Matching](#sentences-matching)
-- [Text Classification](#text-classification)
+- [Sentences Matching (Natural Language Inference/Textual Entailment)](#sentences-matching)
+- [Text Classification (Sentiment Classification)](#text-classification)
 - [Materials](#materials)
 
 ## Papers and Notes
@@ -40,8 +40,8 @@
   - Peters et al. - 2017 - **Semi-supervised sequence tagging with bidirectional language models** [[pdf]](https://arxiv.org/abs/1705.00108)
   - Shang et al. - 2018 - **Learning Named Entity Tagger using Domain-Specific Dictionary** [[pdf]](https://arxiv.org/abs/1809.03599)
 - references
-  - [ChineseNER](https://github.com/zjy-ucas/ChineseNER)
-
+  - [ChineseNER (TensorFlow)](https://github.com/zjy-ucas/ChineseNER)
+  - [flair (PyTorch)](https://github.com/zalandoresearch/flair)
 ### Language Model
 - 2017-11
   - Bengio et al. - 2003 - **A neural probabilistic language model** [[pdf]](http://www.jmlr.org/papers/v3/bengio03a.html)
@@ -134,3 +134,4 @@
 - [NLP-progress](https://github.com/sebastianruder/NLP-progress)
 
 - [Awesome-Chinese-NLP](https://github.com/crownpku/awesome-chinese-nlp)
+- [StateOfTheArt.ai](https://www.stateoftheart.ai/)
