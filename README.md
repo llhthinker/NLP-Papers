@@ -1,5 +1,6 @@
 # NLP-Papers
-- [Distributed Representations](#distributed-representations)
+- [Distributed Word Representations](#distributed-word-representations)
+- [Distributed Sentence Representations](#distributed-sentence-representations)
 - [Entity Recognition (Sequence Tagging)](#entity-recognition)
 - [Language Model](#language-model)
 - [Machine Translation](#machine-translation)
@@ -10,11 +11,10 @@
 - [Materials](#materials)
 
 ## Papers and Notes
-### Distributed Representations
+### Distributed Word Representations
 - 2017-11
   - Faruqui and Dyer - 2014 - **Improving vector space word representations using multilingual correlation** [[pdf]](http://repository.cmu.edu/lti/31/)  [[note]](./distributed%20representations/2017-11/Faruqui%20and%20Dyer%20-%202014%20-%20Improving%20vector%20space%20word%20representations%20using%20multilingual%20correlation/note.md)
   - Maaten and Hinton - 2008 - **Visualizing data using t-SNE** [[pdf]](http://www.jmlr.org/papers/v9/vandermaaten08a.html) [[pdf (annotated)]](./distributed%20representations/2017-11/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE.pdf) [[note]](./distributed%20representations/2017-11/Maaten%20and%20Hinton%20-%202008%20-%20Visualizing%20data%20using%20t-SNE/note.md)
-  - Le and Mikolov - 2014 - **Distributed representations of sentences and documents** [[pdf]](http://proceedings.mlr.press/v32/le14.pdf) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Distributed%20Representations%20of%20Sentences%20and%20Documents/Distributed%20Representations%20of%20Sentences%20and%20Documents.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Distributed%20Representations%20of%20Sentences%20and%20Documents/note.md) 
   - Ling et al. - 2015 - **Finding function in form: Compositional character models for open vocabulary word representation**  [[pdf]](https://arxiv.org/abs/1508.02096) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Finding%20Function%20in%20Form%20Compositional%20Character%20Models/Finding%20Function%20in%20Form%20Compositional%20Character%20Models.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Finding%20Function%20in%20Form%20Compositional%20Character%20Models/note.md) 
   - Bojanowski et al. - 2016 - **Enriching word vectors with subword information** [[pdf]](https://arxiv.org/abs/1607.04606) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Enriching%20Word%20Vectors%20with%20Subword%20Information/Enriching%20Word%20Vectors%20with%20Subword%20Information.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Enriching%20Word%20Vectors%20with%20Subword%20Information/note.md) 
 - 2017-12
@@ -22,16 +22,30 @@
 - 2018-05
   - Peters et al. - 2018- **Deep contextualized word representations** [[pdf]](https://arxiv.org/abs/1802.05365)
 - references
-  - word2vec
+  - word Embedding
     - [word2vec(tensorflow)](https://github.com/llhthinker/udacity-deeplearning/blob/master/5_word2vec.ipynb)
     - [subword-based word vector](https://github.com/facebookresearch/fastText)
     - [Chinese Word Vectors 中文词向量](https://github.com/Embedding/Chinese-Word-Vectors)
     - [Tencent AI Lab Embedding Corpus for **Over 8 Million** Chinese Words and Phrases](https://ai.tencent.com/ailab/nlp/embedding.html)
-  - doc2vec
-    - [doc2vec(gensim)](https://github.com/jhlau/doc2vec)
   - ELMo
     - [Pre-trained ELMo Representations for Many Languages](https://github.com/HIT-SCIR/ELMoForManyLangs)
 
+### Distributed Sentence Representations
+- 2017-11
+  - Le and Mikolov - 2014 - **Distributed representations of sentences and documents** [[pdf]](http://proceedings.mlr.press/v32/le14.pdf) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Distributed%20Representations%20of%20Sentences%20and%20Documents/Distributed%20Representations%20of%20Sentences%20and%20Documents.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Distributed%20Representations%20of%20Sentences%20and%20Documents/note.md) 
+- 2018-12
+  - Li and Hovy - 2014 - **A Model of Coherence Based on Distributed Sentence Representation** [[pdf]](http://www.aclweb.org/anthology/D14-1218)
+  - Kiros et al. - 2015 - **Skip-Thought Vectors** [[pdf]](http://papers.nips.cc/paper/5950-skip-thought-vectors)
+  - Wieting et al. - 2015 - **Towards universal paraphrastic sentence embeddings** [[pdf]](https://arxiv.org/abs/1511.08198)
+  - Hill et al. - 2016 - **Learning Distributed Representations of Sentences from Unlabelled Data** [[pdf]](https://arxiv.org/abs/1602.03483)
+  - Arora et al. - 2016 - **A simple but tough-to-beat baseline for sentence embeddings** [[pdf]](https://openreview.net/forum?id=SyK00v5xx)
+  - Pagliardini et al. - 2017 - **Unsupervised Learning of Sentence Embeddings using Compositional n-Gram Features** [[pdf]](https://arxiv.org/abs/1703.02507)
+  - Logeswaran et al. - 2018 - **An efficient framework for learning sentence representations(Quick-Thought Vectors)** [[pdf]](https://arxiv.org/abs/1803.02893)
+- references
+  - [doc2vec(gensim)](https://github.com/jhlau/doc2vec)
+  - [Skip-Thought Vectors](https://github.com/tensorflow/models/tree/master/research/skip_thoughts)
+  - [Quick-Thought Vectors](https://github.com/lajanugen/S2V)
+  
 ### Entity Recognition
 - 2018-10
   - Lample et al. - 2016 - **Neural Architectures for Named Entity Recognition** [[pdf]](https://arxiv.org/abs/1603.01360)
