@@ -36,15 +36,19 @@
 - 2018-12
   - Li and Hovy - 2014 - **A Model of Coherence Based on Distributed Sentence Representation** [[pdf]](http://www.aclweb.org/anthology/D14-1218)
   - Kiros et al. - 2015 - **Skip-Thought Vectors** [[pdf]](http://papers.nips.cc/paper/5950-skip-thought-vectors)
-  - Wieting et al. - 2015 - **Towards universal paraphrastic sentence embeddings** [[pdf]](https://arxiv.org/abs/1511.08198)
   - Hill et al. - 2016 - **Learning Distributed Representations of Sentences from Unlabelled Data** [[pdf]](https://arxiv.org/abs/1602.03483)
   - Arora et al. - 2016 - **A simple but tough-to-beat baseline for sentence embeddings** [[pdf]](https://openreview.net/forum?id=SyK00v5xx)
-  - Pagliardini et al. - 2017 - **Unsupervised Learning of Sentence Embeddings using Compositional n-Gram Features** [[pdf]](https://arxiv.org/abs/1703.02507)
-  - Logeswaran et al. - 2018 - **An efficient framework for learning sentence representations(Quick-Thought Vectors)** [[pdf]](https://arxiv.org/abs/1803.02893)
+  - Pagliardini et al. - 2017 - **Unsupervised Learning of Sentence Embeddings using Compositional n-Gram Features (sent2vec)** [[pdf]](https://arxiv.org/abs/1703.02507)
+  - Logeswaran et al. - 2018 - **An efficient framework for learning sentence representations (Quick-Thought Vectors)** [[pdf]](https://arxiv.org/abs/1803.02893)
+- 2019-01
+  - Wieting et al. - 2015 - **Towards universal paraphrastic sentence embeddings** [[pdf]](https://arxiv.org/abs/1511.08198)
+  - Conneau et al. - 2017 - **Supervised Learning of Universal Sentence Representations from Natural Language Inference Data (InferSent)** [[pdf]](https://arxiv.org/abs/1705.02364)
 - references
   - [doc2vec(gensim)](https://github.com/jhlau/doc2vec)
   - [Skip-Thought Vectors](https://github.com/tensorflow/models/tree/master/research/skip_thoughts)
   - [Quick-Thought Vectors](https://github.com/lajanugen/S2V)
+  - [sent2vec](https://github.com/epfml/sent2vec)
+  - [InferSent](https://github.com/facebookresearch/InferSent)
   
 ### Entity Recognition
 - 2018-10
