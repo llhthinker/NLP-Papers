@@ -42,7 +42,9 @@
   - Logeswaran et al. - 2018 - **An efficient framework for learning sentence representations (Quick-Thought Vectors)** [[pdf]](https://arxiv.org/abs/1803.02893)
 - 2019-01
   - Wieting et al. - 2015 - **Towards universal paraphrastic sentence embeddings** [[pdf]](https://arxiv.org/abs/1511.08198)
+  - Adi et al. - 2016 - **Fine-grained Analysis of Sentence Embeddings Using Auxiliary Prediction Tasks** [[pdf]](https://arxiv.org/abs/1608.04207)
   - Conneau et al. - 2017 - **Supervised Learning of Universal Sentence Representations from Natural Language Inference Data (InferSent)** [[pdf]](https://arxiv.org/abs/1705.02364)
+  - Cer et al. - 2018 - **Universal Sentence Encoder** [[pdf]](https://arxiv.org/abs/1803.11175)
 - references
   - [doc2vec(gensim)](https://github.com/jhlau/doc2vec)
   - [Skip-Thought Vectors](https://github.com/tensorflow/models/tree/master/research/skip_thoughts)
@@ -82,6 +84,7 @@
 * references
   - [OpenNMT-py (in PyTorch)](https://github.com/OpenNMT/OpenNMT-py)
   - [nmt (in TensorFlow)](https://github.com/tensorflow/nmt)
+  - [MT-Reading-List](https://github.com/THUNLP-MT/MT-Reading-List)
 
 ### Question Answering
 
@@ -104,6 +107,7 @@
 * 2018-08 
   * Mintz et al. - 2009 - **Distant supervision for relation extraction without labeled data** [[pdf]](https://dl.acm.org/citation.cfm?id=1690287)
   * Zeng et al. - 2015 - **Distant Supervision for Relation Extraction via Piecewise Convolutional Neural Networks** [[pdf]](http://www.aclweb.org/anthology/D15-1203)
+  * Zhou et al. - 2016 - **Attention-Based Bidirectional Long Short-Term Memory Networks for Relation Classification** [[pdf]](http://www.aclweb.org/anthology/P16-2034)
   * Lin et al. - 2016 - **Neural Relation Extraction with Selective Attention over Instances** [[pdf]](http://www.aclweb.org/anthology/P16-1200)
 * 2018-09
   * Ji et al. - 2017 - **Distant Supervision for Relation Extraction with Sentence-Level Attention and Entity Descriptions** [[pdf]](http://www.aaai.org/ocs/index.php/AAAI/AAAI17/paper/download/14491/14078)
@@ -111,7 +115,8 @@
 * references
   * [OpenNRE](https://github.com/thunlp/OpenNRE)
   * [NREPapers: Must-read papers on neural relation extraction (NRE)](https://github.com/thunlp/NREPapers)
-
+  * [awesome-relation-extraction](https://github.com/roomylee/awesome-relation-extraction)
+  
 ### Sentences Matching
 
 * 2017-12
