@@ -37,7 +37,7 @@
   - Li and Hovy - 2014 - **A Model of Coherence Based on Distributed Sentence Representation** [[pdf]](http://www.aclweb.org/anthology/D14-1218) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/A%20Model%20of%20Coherence%20Based%20on%20Distributed%20Sentence%20Representation.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#a-model-of-coherence-based-on-distributed-sentence-representation)
   - Kiros et al. - 2015 - **Skip-Thought Vectors** [[pdf]](http://papers.nips.cc/paper/5950-skip-thought-vectors) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/Skip-Thought%20Vectors.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#skip-thought-vectors)
   - Hill et al. - 2016 - **Learning Distributed Representations of Sentences from Unlabelled Data** [[pdf]](https://arxiv.org/abs/1602.03483) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/Learning%20Distributed%20Representations%20of%20Sentences%20from%20Unlabelled%20Data.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#learning-distributed-representations-of-sentences-from-unlabelled-data)
-  - Arora et al. - 2016 - **A simple but tough-to-beat baseline for sentence embeddings** [[pdf]](https://openreview.net/forum?id=SyK00v5xx)
+  - Arora et al. - 2016 - **A simple but tough-to-beat baseline for sentence embeddings** [[pdf]](https://openreview.net/forum?id=SyK00v5xx) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/A%20Simple%20but%20Tough-to-Beat%20Baseline%20for%20Sentence%20Embeddings.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#a-simple-but-tough-to-beat-baseline-for-sentence-embeddings)
   - Pagliardini et al. - 2017 - **Unsupervised Learning of Sentence Embeddings using Compositional n-Gram Features (sent2vec)** [[pdf]](https://arxiv.org/abs/1703.02507)
   - Logeswaran et al. - 2018 - **An efficient framework for learning sentence representations (Quick-Thought Vectors)** [[pdf]](https://arxiv.org/abs/1803.02893)
 - 2019-01
@@ -48,6 +48,7 @@
 - references
   - [doc2vec(gensim)](https://github.com/jhlau/doc2vec)
   - [Skip-Thought Vectors](https://github.com/tensorflow/models/tree/master/research/skip_thoughts)
+  - [SIF(sentence embedding by Smooth Inverse Frequency weighting scheme)](https://github.com/PrincetonML/SIF)
   - [Quick-Thought Vectors](https://github.com/lajanugen/S2V)
   - [sent2vec](https://github.com/epfml/sent2vec)
   - [InferSent](https://github.com/facebookresearch/InferSent)
@@ -158,3 +159,4 @@
 
 - [Awesome-Chinese-NLP](https://github.com/crownpku/awesome-chinese-nlp)
 - [StateOfTheArt.ai](https://www.stateoftheart.ai/)
+- [funNLP(从文本中抽取结构化信息等资源汇总)](https://github.com/fighting41love/funNLP)
