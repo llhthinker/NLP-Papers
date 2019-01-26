@@ -38,14 +38,15 @@
   - Kiros et al. - 2015 - **Skip-Thought Vectors** [[pdf]](http://papers.nips.cc/paper/5950-skip-thought-vectors) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/Skip-Thought%20Vectors.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#skip-thought-vectors)
   - Hill et al. - 2016 - **Learning Distributed Representations of Sentences from Unlabelled Data** [[pdf]](https://arxiv.org/abs/1602.03483) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/Learning%20Distributed%20Representations%20of%20Sentences%20from%20Unlabelled%20Data.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#learning-distributed-representations-of-sentences-from-unlabelled-data)
   - Arora et al. - 2016 - **A simple but tough-to-beat baseline for sentence embeddings** [[pdf]](https://openreview.net/forum?id=SyK00v5xx) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/A%20Simple%20but%20Tough-to-Beat%20Baseline%20for%20Sentence%20Embeddings.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#a-simple-but-tough-to-beat-baseline-for-sentence-embeddings)
-  - Pagliardini et al. - 2017 - **Unsupervised Learning of Sentence Embeddings using Compositional n-Gram Features (sent2vec)** [[pdf]](https://arxiv.org/abs/1703.02507)
-  - Logeswaran et al. - 2018 - **An efficient framework for learning sentence representations (Quick-Thought Vectors)** [[pdf]](https://arxiv.org/abs/1803.02893)
+  - Pagliardini et al. - 2017 - **Unsupervised Learning of Sentence Embeddings using Compositional n-Gram Features (sent2vec)** [[pdf]](https://arxiv.org/abs/1703.02507) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/Unsupervised%20Learning%20of%20Sentence%20Embeddings%20using%20Compositional%20n-Gram%20Features.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#unsupervised-learning-of-sentence-embeddings-using-compositional-n-gram-features)
+  - Logeswaran et al. - 2018 - **An efficient framework for learning sentence representations (Quick-Thought Vectors)** [[pdf]](https://arxiv.org/abs/1803.02893) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/An%20efficient%20framework%20for%20learning%20sentence%20representations.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#an-efficient-framework-for-learning-sentence-representations)
 - 2019-01
   - Wieting et al. - 2015 - **Towards universal paraphrastic sentence embeddings** [[pdf]](https://arxiv.org/abs/1511.08198)
   - Adi et al. - 2016 - **Fine-grained Analysis of Sentence Embeddings Using Auxiliary Prediction Tasks** [[pdf]](https://arxiv.org/abs/1608.04207)
   - Conneau et al. - 2017 - **Supervised Learning of Universal Sentence Representations from Natural Language Inference Data (InferSent)** [[pdf]](https://arxiv.org/abs/1705.02364)
   - Cer et al. - 2018 - **Universal Sentence Encoder** [[pdf]](https://arxiv.org/abs/1803.11175)
 - references
+  - [SentEval: evaluation toolkit for sentence embeddings](https://github.com/facebookresearch/SentEval)
   - [doc2vec(gensim)](https://github.com/jhlau/doc2vec)
   - [Skip-Thought Vectors](https://github.com/tensorflow/models/tree/master/research/skip_thoughts)
   - [SIF(sentence embedding by Smooth Inverse Frequency weighting scheme)](https://github.com/PrincetonML/SIF)
@@ -81,7 +82,7 @@
   * Luong et al. - 2015 - **Effective Approaches to Attention-based NMT** [[pdf]](https://arxiv.org/abs/1508.04025)
 * 2018-06
   * Gehring et al. - 2017 - **Convolutional sequence to sequence learning** [[pdf]](https://arxiv.org/abs/1705.03122)
-  * Vaswani et al. - 2017 - **Attention is all you need** [[pdf]](https://arxiv.org/abs/1706.03762)
+  * Vaswani et al. - 2017 - **Attention is all you need** [[pdf]](https://arxiv.org/abs/1706.03762) [[note1:The Illustrated Transformer]](http://jalammar.github.io/illustrated-transformer/) [[note2:The Annotated Transformer]](http://nlp.seas.harvard.edu/2018/04/03/attention.html)
 * references
   - [OpenNMT-py (in PyTorch)](https://github.com/OpenNMT/OpenNMT-py)
   - [nmt (in TensorFlow)](https://github.com/tensorflow/nmt)
