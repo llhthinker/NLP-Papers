@@ -89,10 +89,9 @@ $$
 # Towards universal paraphrastic sentence embeddings
 
 本文提出使用[PPDB(the Paraphrase Database)](http://www.aclweb.org/anthology/N13-1092)来学习通用的sentence embeddings。论文模型的基本流程是输入mini-batch的释义对$<x_1, x_2>$集合$X_b$，并通过对$X_b$中的句子进行采样得到$x_1,x_2$对应的负样本$t_1, t_2$，将这四个句子通过编码器（编码函数）$g$得到句子编码，然后使用一种 margin-based loss进行优化，损失函数的基本思想是**希望编码后的释义对$<x_1,x_2>$能够非常相近而非释义对$<x_1,t_1>$和$<x_2,t_2>$能够有不小于$\delta$的间距**。对于全体训练数据$X$，目标函数如下，其中$\lambda_c,\lambda_w$为正则化参数，$W_w$为word embedding参数，$W_{w_{initial}}$ 为word embedding初始化矩阵，$W_c$是除了$W_w$后的其他参数。
+
 $$
-\min _ { W _ { c } , W _ { w } } \frac { 1 } { | X | } \left( \sum _ { \left\langle x _ { 1 } , x _ { 2 } \right\rangle \in X } \max \left( 0 , \delta - \cos \left( g \left( x _ { 1 } \right) , g \left( x _ { 2 } \right) \right) + \cos \left( g \left( x _ { 1 } \right) , g \left( t _ { 1 } \right) \right) \right)\right. \\
-+ \max \left( 0 , \delta - \cos \left( g \left( x _ { 1 } \right) , g \left( x _ { 2 } \right) \right) + \cos \left( g \left( x _ { 2 } \right) , g \left( t _ { 2 } \right) \right) \right) \bigg) \\
-+ \lambda _ { c } \left\| W _ { c } \right\| ^ { 2 } + \lambda _ { w } \left\| W _ { w _ { i n i t i a l } } - W _ { w } \right\| ^ { 2 }
+\min _ { W _ { c } , W _ { w } } \frac { 1 } { | X | } \left( \sum _ { \left\langle x _ { 1 } , x _ { 2 } \right\rangle \in X } \max \left( 0 , \delta - \cos \left( g \left( x _ { 1 } \right) , g \left( x _ { 2 } \right) \right) + \cos \left( g \left( x _ { 1 } \right) , g \left( t _ { 1 } \right) \right) \right)\right. \\ + \max \left( 0 , \delta - \cos \left( g \left( x _ { 1 } \right) , g \left( x _ { 2 } \right) \right) + \cos \left( g \left( x _ { 2 } \right) , g \left( t _ { 2 } \right) \right) \right) \bigg) \\ + \lambda _ { c } \left\| W _ { c } \right\| ^ { 2 } + \lambda _ { w } \left\| W _ { w _ { i n i t i a l } } - W _ { w } \right\| ^ { 2 }
 $$
 
 论文实现了6种类型的编码函数$g$，具体如下：
