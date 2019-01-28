@@ -85,3 +85,26 @@ $$
 - 与专门用于句子分类任务模型（如CNN）对比，QT使用ensemble，考虑模型类型(单向/双向)，词向量（随机/预训练）以及数据集（BookCorpus/UMBC ）三个方面进行训练不同的模型进行集成，也取得了有竞争力的效果。
 
 论文还通过image-sentence ranking和nearest neighbors两个实验来为QT有效性提供依据。
+
+# Towards universal paraphrastic sentence embeddings
+
+本文提出使用[PPDB(the Paraphrase Database)](http://www.aclweb.org/anthology/N13-1092)来学习通用的sentence embeddings。论文模型的基本流程是输入mini-batch的释义对$<x_1, x_2>$集合$X_b$，并通过对$X_b$中的句子进行采样得到$x_1,x_2$对应的负样本$t_1, t_2$，将这四个句子通过编码器（编码函数）$g$得到句子编码，然后使用一种 margin-based loss进行优化，损失函数的基本思想是**希望编码后的释义对$<x_1,x_2>$能够非常相近而非释义对$<x_1,t_1>$和$<x_2,t_2>$能够有不小于$\delta$的间距**。对于全体训练数据$X$，目标函数如下，其中$\lambda_c,\lambda_w$为正则化参数，$W_w$为word embedding参数，$W_{w_{initial}}$ 为word embedding初始化矩阵，$W_c$是除了$W_w$后的其他参数。
+$$
+\min _ { W _ { c } , W _ { w } } \frac { 1 } { | X | } \left( \sum _ { \left\langle x _ { 1 } , x _ { 2 } \right\rangle \in X } \max \left( 0 , \delta - \cos \left( g \left( x _ { 1 } \right) , g \left( x _ { 2 } \right) \right) + \cos \left( g \left( x _ { 1 } \right) , g \left( t _ { 1 } \right) \right) \right)\right. \\
++ \max \left( 0 , \delta - \cos \left( g \left( x _ { 1 } \right) , g \left( x _ { 2 } \right) \right) + \cos \left( g \left( x _ { 2 } \right) , g \left( t _ { 2 } \right) \right) \right) \bigg) \\
++ \lambda _ { c } \left\| W _ { c } \right\| ^ { 2 } + \lambda _ { w } \left\| W _ { w _ { i n i t i a l } } - W _ { w } \right\| ^ { 2 }
+$$
+
+论文实现了6种类型的编码函数$g$，具体如下：
+
+1. 词向量平均；
+2. 词向量平均后通过一个线性层；
+3. [DAN模型](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-11/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification/note.md#deep-averaging-networks)：词向量平均后通过多层带非线性函数的全连接层；
+4. Simple RNN，取最后一个隐状态向量；
+5. identity-RNN (iRNN)， 一种特殊的simple RNN，其weight矩阵初始化为单位矩阵，bias初始化为0向量，激活函数为恒等函数，最终的句子编码向量为最后一个隐状态向量除以句子中词的个数。当正则化程度很高时（模型参数几乎不更新），iRNN将变成模型1（词向量平均），不同的是iRNN能够考虑词序，有希望能够比模型1效果好；
+6. LSTM，取最后一个隐状态向量。
+
+论文通过大量实验来对比上述6种编码器的优劣，得到如下结论：
+
+- 对于无监督文本相似度任务，复杂的模型如LSTM在垂直领域数据集上表现更好，而对于开放域数据集，简单的模型如词向量平均比LSTM的效果更好；
+- 对于句子相似度，句子蕴含以及情感分析这三种有监督任务，词向量平均模型在句子相似度和句子蕴含两个任务上表现比LSTM的效果更好，而情感分析任务LSTM表现非常不错。
