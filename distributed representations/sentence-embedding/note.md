@@ -40,11 +40,11 @@ $$
 
 本文提出了两种无监督学习模型用于学习句子分布式表示。第一种模型称为**序列去噪自编码器**（SDAE: Sequential Denoising AutoEncoder）。AutoEncoder包括编码器和解码器两部分，输入信息通过编码器产生编码信息，再通过解码器得到输入信息，模型的目标是使输出信息和输入信息原来越接近。DAE (Denoising AutoEncoder)表示模型的输入信息首先经过了噪声处理后再进行编码和解码，并且希望解码的输出信息是不含噪声的输入信息，即去噪。DAE常用于图像处理，本文提出SDAE模型表示用来处理变长的句子（序列）。具体地，给定句子$S​$，采用噪声函数：$N(S|p_0,p_x)​$，其中$p_0, p_x​$为0到1之间的概率值。首先，对于$S​$中的每个词$w​$，噪声函数$N​$按照概率$p_0​$随机删除$w​$，然后对于$S​$中每个不重叠的bigram $w_iw_{i+1}​$，噪声函数$N​$按照概率$p_x​$对$w_i​$和$w_{i+1}​$进行交换。论文采用基于LSTM的encoder-decoder模型，SDAE的目标是预测出原始句子$S​$。SDAE模型在验证集上对超参数$p_0,p_x \in {0.1, 0.2,  0.3}​$进行搜索，得到当$p_0=p_x=0.1​$为最优结果。论文还尝试令$p_0=p_x=0​$进行对比实验，SDAE模型即变成了SAE模型。 SDAE模型相较于[Skip-Thought](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#skip-thought-vectors)的优点是只需要输入单个句子，即不要求句子所在的文本是有序的，而Skip-Thought的输入必须是三个有序的句子。
 
-第二种模型称为**FastSent**，[Skip-Thought](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#skip-thought-vectors)模型采取语言模型形式的编码解码方式，导致其训练速度会很慢。FastSent采取了BOW形式的编码方式，使得模型训练速度大幅提高，因此称为FastSent。具体地，给定一个连续的句子三元组$S_{i-1}, S_i, S_{i+1}​$，对中间的句子$S_{i}​$进行编码，编码方式是$S_i​$中所有词的词向量之和，即$\mathbf { s } _ { \mathbf { i } } = \sum _ { w \in S _ { i } } u _ { w }​$，然后根据$\mathbf { s } _ { \mathbf { i } }​$对$w \in S_{i-1}  \cup S_{i+1}​$进行预测，这与word2vec模型中的skip-gram基本一致，而无需像Skip-Thought一样按照句子中词的顺序生成（预测）。因此FastSent的损失函数如下:
+第二种模型称为**FastSent**，[Skip-Thought](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#skip-thought-vectors)模型采取语言模型形式的编码解码方式，导致其训练速度会很慢。FastSent采取了BOW形式的编码方式，使得模型训练速度大幅提高，因此称为FastSent。具体地，给定一个连续的句子三元组$S_{i-1}, S_i, S_{i+1}$，对中间的句子$S_{i}$进行编码，编码方式是$S_i$中所有词的词向量之和，即$\mathbf { s } _ { \mathbf { i } } = \sum _ { w \in S _ { i } } u _ { w }$，然后根据$\mathbf { s } _ { \mathbf { i } }$对$w \in S_{i-1}  \cup S_{i+1}$进行预测，这与word2vec模型中的skip-gram基本一致，而无需像Skip-Thought一样按照句子中词的顺序生成（预测）。因此FastSent的损失函数如下:
 $$
 \sum _ { w \in S _ { i - 1 } \cup S _ { i + 1 } } \phi \left( \mathbf { s } _ { \mathbf { i } } , v _ { w } \right)
 $$
-其中$\phi \left( v _ { 1 } , v _ { 2 } \right)​$为softmax函数，$v_w​$为目标句子中的词$w​$的embedding。论文还提出了一种变体模型FastSent+AE，该变体不光是预测前后两个句子中的词，还预测本身句子的词，损失函数即为：
+其中$\phi \left( v _ { 1 } , v _ { 2 } \right)$为softmax函数，$v_w$为目标句子中的词$w$的embedding。论文还提出了一种变体模型FastSent+AE，该变体不光是预测前后两个句子中的词，还预测本身句子的词，损失函数即为：
 $$
 \sum _ { w \in S _ { i - 1 } \cup S _ { i } \cup S _ { i + 1 } } \phi \left( \mathbf { s _ { i } } , v _ { w } \right)
 $$
@@ -67,7 +67,7 @@ $$
 
 # An efficient framework for learning sentence representations
 
-本文提出了一种简单且有效的框架用于学习句子表示。和常规的编码解码类模型（如[skip-thoughts](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#skip-thought-vectors)和[SDAE](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#learning-distributed-representations-of-sentences-from-unlabelled-data)）不同的是，本文采用一种分类器的方式学习句子表示。具体地，模型的输入为一个句子$s$以及一个候选句子集合$S_{cand}$，其中$S_{cand}$包含一个句子$s_{ctxt}$是$s$的上下文句子（也就是$s$的前一个句子或后一个句子）以及其他不是$s$上下文的句子。模型通过对$s$以及$S_{cand}$中的每个句子进行编码，然后输入到一个分类器中，让分类器选出$S_{cand}$中的哪个句子是$s_{ctxt}$。实验设置候选句子集合大小为3，即$S_{cand}​$包含1个上下文句子和两个无关句子。模型结构如下：
+本文提出了一种简单且有效的框架用于学习句子表示。和常规的编码解码类模型（如[skip-thoughts](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#skip-thought-vectors)和[SDAE](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#learning-distributed-representations-of-sentences-from-unlabelled-data)）不同的是，本文采用一种分类器的方式学习句子表示。具体地，模型的输入为一个句子$s$以及一个候选句子集合$S_{cand}$，其中$S_{cand}$包含一个句子$s_{ctxt}$是$s$的上下文句子（也就是$s$的前一个句子或后一个句子）以及其他不是$s$上下文的句子。模型通过对$s$以及$S_{cand}$中的每个句子进行编码，然后输入到一个分类器中，让分类器选出$S_{cand}$中的哪个句子是$s_{ctxt}$。实验设置候选句子集合大小为3，即$S_{cand}$包含1个上下文句子和两个无关句子。模型结构如下：
 
 ![quick-thought](./quick-thought.png)
 
@@ -88,7 +88,7 @@ $$
 
 # Towards universal paraphrastic sentence embeddings
 
-本文提出使用[PPDB(the Paraphrase Database)](http://www.aclweb.org/anthology/N13-1092)来学习通用的sentence embeddings。论文模型的基本流程是输入mini-batch的释义对$<x_1, x_2>$集合$X_b$，并通过对$X_b$中的句子进行采样得到$x_1,x_2$对应的负样本$t_1, t_2$，将这四个句子通过编码器（编码函数）$g$得到句子编码，然后使用一种 margin-based loss进行优化，损失函数的基本思想是**希望编码后的释义对$<x_1,x_2>$能够非常相近而非释义对$<x_1,t_1>$和$<x_2,t_2>$能够有不小于$\delta$的间距**。对于全体训练数据$X$，目标函数如下，其中$\lambda_c,\lambda_w$为正则化参数，$W_w$为word embedding参数，$W_{w_{initial}}$ 为word embedding初始化矩阵，$W_c$是除了$W_w$后的其他参数。
+本文提出使用[PPDB(the Paraphrase Database)](http://www.aclweb.org/anthology/N13-1092)来学习通用的sentence embeddings。论文模型的基本流程是输入mini-batch的释义对$<x_1, x_2>​$集合$X_b​$，并通过对$X_b​$中的句子进行采样得到$x_1,x_2​$对应的负样本$t_1, t_2​$，将这四个句子通过编码器（编码函数）$g​$得到句子编码，然后使用一种 margin-based loss进行优化，损失函数的基本思想是**希望编码后的释义对$<x_1,x_2>​$能够非常相近而非释义对$<x_1,t_1>​$和$<x_2,t_2>​$能够有不小于$\delta​$的间距**。对于全体训练数据$X​$，目标函数如下，其中$\lambda_c,\lambda_w​$为正则化参数，$W_w​$为word embedding参数，$W_{w_{initial}}​$ 为word embedding初始化矩阵，$W_c​$是除了$W_w​$后的其他参数。
 
 $$
 \min _ { W _ { c } , W _ { w } } \frac { 1 } { | X | } \left( \sum _ { \left\langle x _ { 1 } , x _ { 2 } \right\rangle \in X } \max \left( 0 , \delta - \cos \left( g \left( x _ { 1 } \right) , g \left( x _ { 2 } \right) \right) + \cos \left( g \left( x _ { 1 } \right) , g \left( t _ { 1 } \right) \right) \right)\right. \\ + \max \left( 0 , \delta - \cos \left( g \left( x _ { 1 } \right) , g \left( x _ { 2 } \right) \right) + \cos \left( g \left( x _ { 2 } \right) , g \left( t _ { 2 } \right) \right) \right) \bigg) \\ + \lambda _ { c } \left\| W _ { c } \right\| ^ { 2 } + \lambda _ { w } \left\| W _ { w _ { i n i t i a l } } - W _ { w } \right\| ^ { 2 }
@@ -107,3 +107,62 @@ $$
 
 - 对于无监督文本相似度任务，复杂的模型如LSTM在垂直领域数据集上表现更好，而对于开放域数据集，简单的模型如词向量平均比LSTM的效果更好；
 - 对于句子相似度，句子蕴含以及情感分析这三种有监督任务，词向量平均模型在句子相似度和句子蕴含两个任务上表现比LSTM的效果更好，而情感分析任务LSTM表现非常不错。
+
+# Fine-grained Analysis of Sentence Embeddings Using Auxiliary Prediction Tasks
+
+之前往往是通过评测sentence embeddings在下游任务如句子分类的表现来反映该sentence embeddings的优劣。而本文设计了三种辅助预测任务来对sentence embeddings本身进行细粒度分析，包括句子长度，词内容（word content），词序三个方面。三种辅助预测任务如下：
+
+- Length Task：该任务是来度量句子向量多大程度上编码了句子长度（词的个数）信息。该任务定义为多分类问题，将句子长度划分为8个等级，给定一个句子向量，分类器的目标是预测句子长度属于哪个等级。
+- Word-content Task: 该任务是来度量句子向量多大程度上编码了句子中是否包含某词的信息，该任务定义为二分类问题，给定一个句子向量和一个词向量，分类器的目标是判断这个词是否属于该句。
+- Word-order Task: 该任务是来度量句子向量多大程度编码了句子词序信息。该任务定义为二分类问题，给定一个句子向量和两个属于该句的词向量$w_1,w_2$，分类器的目标是判断$w_1$是否在$w_2$前面。
+
+# Supervised Learning of Universal Sentence Representations from Natural Language Inference Data 
+本文提出使用自然语言推理（natural language inference, NLI）数据集来学习通用的句子表示。选择NLI任务是因为NLI是一个high-level理解任务，涉及推理句子间的语义关系。模型整体架构如下：
+
+![nli](./nli.png)
+
+论文对比了7种不同的句子编码器，包括：
+
+1. GRU，取最后一个隐状态
+
+2. LSTM，取最后一个隐状态
+
+3. BiGRU，前向GRU与反向GRU最后一个隐状态的连结
+
+4. BiLSTM+mean pooling
+
+5. BiLSTM+max pooling
+
+6. Self-attentive network: bi-LSTM+inner Attention with multiple views，Inner Attention机制如下：
+
+   $$
+   \overline { h } _ { i } = \tanh \left( W h _ { i } + b _ { w } \right) \\
+   \alpha _ { i } = \frac { e ^ { \overline { h } _ { i } ^ { T } u _ { w } } } { \sum _ { i } e ^ { \overline { h } _ { i } ^ { T } u _ { w } } } \\
+   u = \sum _ { t } \alpha _ { i } h _ { i }
+   $$
+
+   其中$\{h_1,...,h_T\}$为BiLSTM的隐状态输出，将它们输入到tanh变换层产生keys集合$( \overline { h } _ { 1 } , \ldots , \overline { h } _ { T } )$，然后与可学习（可训练）的query向量（上下文向量）计算得到$\{a_i\}$，然后进行加权得到句子表示$u$，如下图所示：
+
+   ![inner-attn](./inner_attn.png)
+
+   论文具体是采用4个上下文向量$u _ { w } ^ { 1 } , u _ { w } ^ { 2 } , u _ { w } ^ { 3 } , u _ { w } ^ { 4 }$（multiple views），对应产生4个表示后进行连结作为最终的句子表示。
+
+7. Hierarchical ConvNet，多层卷积（4层），每层卷积的maxpooling输出进行连结得到最终句子表示，模型结构如下图：
+
+   ![h_cnn](./h_cnn.png)
+
+论文实验表明：BiLSTM+maxpooling作为编码器，训练数据为[SNLI](https://nlp.stanford.edu/projects/snli/)，能够训练出比Skip-Toughts和FastSent等无监督方法更好的sentences embedding，达到state-of-the-art （2017年）。
+
+# Universal Sentence Encoder
+
+本文在前人研究的基础上，综合利用无监督训练数据和有监督训练数据，进行多任务训练，从而学习一个通用的句子编码器。无监督训练数据包括问答(QA)型网页和论坛，Wikipedia, web news，有监督训练数据为[SNLI](https://nlp.stanford.edu/projects/snli/)。多任务模型设计如下图所示，其中灰色的encoder为共享参数的句子编码器。
+
+![multi-task](./multi-task.png)
+
+论文对比了[DAN](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-11/Deep%20Unordered%20Composition%20Rivals%20Syntactic%20Methods%20for%20Text%20Classification/note.md#deep-averaging-networks)和[Transfomer](http://jalammar.github.io/illustrated-transformer/)这两种编码器。得出如下结论：
+
+- Transformer 模型在各种任务上的表现都优于简单的 DAN 模型，且在处理短句子时只稍慢一些。
+- DAN模型也能具有很不错的表现，并且相较于Transformer模型，训练时间和内存的开销都更小，尤其是当句子较长时。
+
+更详细的介绍可以参考论文作者的博客[Google AI Blog](https://ai.googleblog.com/2018/05/advances-in-semantic-textual-similarity.html) [(中文版)](https://www.jiqizhixin.com/articles/google-advances-in-semantic-textual-similarity)。
+
