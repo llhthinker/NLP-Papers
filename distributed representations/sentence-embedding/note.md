@@ -136,8 +136,8 @@ $$
 6. Self-attentive network: bi-LSTM+inner Attention with multiple views，Inner Attention机制如下：
 
    $$
-   \overline { h } _ { i } = \tanh \left( W h _ { i } + b _ { w } \right) \\
-   \alpha _ { i } = \frac { e ^ { \overline { h } _ { i } ^ { T } u _ { w } } } { \sum _ { i } e ^ { \overline { h } _ { i } ^ { T } u _ { w } } } \\
+   \overline { h } _ { i } = \tanh \left( W h _ { i } + b _ { w } \right);  \\
+   \alpha _ { i } = \frac { e ^ { \overline { h } _ { i } ^ { T } u _ { w } } } { \sum _ { i } e ^ { \overline { h } _ { i } ^ { T } u _ { w } } };  \\
    u = \sum _ { t } \alpha _ { i } h _ { i }
    $$
 
