@@ -2,13 +2,13 @@
 - [Distributed Word Representations](#distributed-word-representations)
 - [Distributed Sentence Representations](#distributed-sentence-representations)
 - [Entity Recognition (Sequence Tagging)](#entity-recognition)
-- [Language Model](#language-model)
+- [Language Model (LM for pre-training)](#language-model)
 - [Machine Translation](#machine-translation)
 - [Question Answering (Machine Reading Comprehension)](#question-answering)
 - [Relation Extraction](#relation-extraction)
 - [Sentences Matching (Natural Language Inference/Textual Entailment)](#sentences-matching)
 - [Text Classification (Sentiment Classification)](#text-classification)
-- [Materials](#materials)
+- [Materials/Toolkits](#materials)
 
 ## Papers and Notes
 ### Distributed Word Representations
@@ -19,16 +19,13 @@
   - Bojanowski et al. - 2016 - **Enriching word vectors with subword information** [[pdf]](https://arxiv.org/abs/1607.04606) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Enriching%20Word%20Vectors%20with%20Subword%20Information/Enriching%20Word%20Vectors%20with%20Subword%20Information.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Enriching%20Word%20Vectors%20with%20Subword%20Information/note.md) 
 - 2017-12
   - Bengio and Senécal - 2003 - **Quick Training of Probabilistic Neural Nets by Importance Sampling** [[pdf]](http://www.iro.umontreal.ca/~lisa/pointeurs/senecal_aistats2003.pdf) [[pdf(annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-12/Quick%20Training%20of%20Probabilistic%20Neural%20Nets%20by%20Importance%20Sampling/Quick%20Training%20of%20Probabilistic%20Neural%20Nets%20by%20Importance%20Sampling.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-12/Quick%20Training%20of%20Probabilistic%20Neural%20Nets%20by%20Importance%20Sampling/note.md)
-- 2018-05
-  - Peters et al. - 2018- **Deep contextualized word representations** [[pdf]](https://arxiv.org/abs/1802.05365)
+
 - references
-  - word Embedding
     - [word2vec(tensorflow)](https://github.com/llhthinker/udacity-deeplearning/blob/master/5_word2vec.ipynb)
     - [subword-based word vector](https://github.com/facebookresearch/fastText)
     - [Chinese Word Vectors 中文词向量](https://github.com/Embedding/Chinese-Word-Vectors)
     - [Tencent AI Lab Embedding Corpus for **Over 8 Million** Chinese Words and Phrases](https://ai.tencent.com/ailab/nlp/embedding.html)
-  - ELMo
-    - [Pre-trained ELMo Representations for Many Languages](https://github.com/HIT-SCIR/ELMoForManyLangs)
+
 
 ### Distributed Sentence Representations
 - 2017-11
@@ -46,6 +43,7 @@
   - Conneau et al. - 2017 - **Supervised Learning of Universal Sentence Representations from Natural Language Inference Data (InferSent)** [[pdf]](https://arxiv.org/abs/1705.02364) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/Supervised%20Learning%20of%20Universal%20Sentence%20Representations%20from%20Natural%20Language%20Inference%20Data.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#supervised-learning-of-universal-sentence-representations-from-natural-language-inference-data)
   - Cer et al. - 2018 - **Universal Sentence Encoder** [[pdf]](https://arxiv.org/abs/1803.11175) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/Universal%20sentence%20encoder.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/sentence-embedding/note.md#universal-sentence-encoder)
 - references
+  - [awesome-sentence-embedding: A curated list of pretrained sentence(and word) embedding models](https://github.com/Separius/awesome-sentence-embedding)
   - [SentEval: evaluation toolkit for sentence embeddings](https://github.com/facebookresearch/SentEval)
   - [doc2vec(gensim)](https://github.com/jhlau/doc2vec)
   - [Skip-Thought Vectors](https://github.com/tensorflow/models/tree/master/research/skip_thoughts)
@@ -68,9 +66,21 @@
 - 2017-11
   - Bengio et al. - 2003 - **A neural probabilistic language model** [[pdf]](http://www.jmlr.org/papers/v3/bengio03a.html)
   - Press and Wolf - 2016 - **Using the output embedding to improve language model** [[pdf]](https://arxiv.org/abs/1608.05859)
+- 2019-02
+  - Peters et al. - 2018- **Deep contextualized word representations(ELMo)** [[pdf]](https://arxiv.org/abs/1802.05365) [[note]](https://zhuanlan.zhihu.com/p/38254332)
+  - Howard and Ruder - 2018 - **Universal language model fine-tuning for text classification(ULMFit)** [[pdf]](http://www.aclweb.org/anthology/P18-1031)
+  - Radford et al. - 2018 - **Improving language understanding by generative pre-training** [[pdf]](https://www.cs.ubc.ca/~amuham01/LING530/papers/radford2018improving.pdf)
+  - Devlin et al. - 2018 - **Bert: Pre-training of deep bidirectional transformers for language understanding** [[pdf]](https://arxiv.org/abs/1810.04805)
+  
 - references
-  - [LSTM for Language Model](https://github.com/gaussic/language_model_zh/blob/master/lm_chinese.ipynb)
-
+  - [Blog:The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](http://jalammar.github.io/illustrated-bert/)
+  - ELMo
+    - [ELMo(AllenNLP)](https://allennlp.org/elmo)
+    - [Pre-trained ELMo Representations for Many Languages](https://github.com/HIT-SCIR/ELMoForManyLangs)
+  - [Quick Start: Training an IMDb sentiment model with ULMFiT](https://docs.fast.ai/text.html#Quick-Start:-Training-an-IMDb-sentiment-model-with-ULMFiT)
+  - [finetune-transformer-lm: Code and model for the paper "Improving Language Understanding by Generative Pre-Training"](https://github.com/openai/finetune-transformer-lm)
+  - [awesome-bert: bert nlp papers, applications and github resources ， BERT 相关论文和 github 项目](https://github.com/Jiakui/awesome-bert)
+  
 ### Machine Translation
 * 2017-12
   * Oda et al. - 2017 - **Neural Machine Translation via Binary Code Predict** [[pdf]](https://arxiv.org/abs/1704.06918) [[note]](./machine%20translation/Oda%20et%20al.%20-%202017%20-%20Neural%20Machine%20Translation%20via%20Binary%20Code%20Prediction/note.md)
@@ -151,13 +161,11 @@
 ### Materials
 
 - [Neural Networks for NLP (CS11-747 Fall 2017 @ CMU)](http://www.phontron.com/class/nn4nlp2017/schedule.html)
-
 - optimization algorithms
-
   - [An overview of gradient descent optimization algorithms](http://ruder.io/optimizing-gradient-descent/)
 
 - [NLP-progress](https://github.com/sebastianruder/NLP-progress)
-
 - [Awesome-Chinese-NLP](https://github.com/crownpku/awesome-chinese-nlp)
 - [StateOfTheArt.ai](https://www.stateoftheart.ai/)
 - [funNLP(从文本中抽取结构化信息等资源汇总)](https://github.com/fighting41love/funNLP)
+- [StanfordNLP: Official Stanford NLP Python Library for Many Human Languages](https://github.com/stanfordnlp/stanfordnlp)
