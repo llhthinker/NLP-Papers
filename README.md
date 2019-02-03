@@ -19,13 +19,11 @@
   - Bojanowski et al. - 2016 - **Enriching word vectors with subword information** [[pdf]](https://arxiv.org/abs/1607.04606) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Enriching%20Word%20Vectors%20with%20Subword%20Information/Enriching%20Word%20Vectors%20with%20Subword%20Information.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-11/Enriching%20Word%20Vectors%20with%20Subword%20Information/note.md) 
 - 2017-12
   - Bengio and Senécal - 2003 - **Quick Training of Probabilistic Neural Nets by Importance Sampling** [[pdf]](http://www.iro.umontreal.ca/~lisa/pointeurs/senecal_aistats2003.pdf) [[pdf(annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-12/Quick%20Training%20of%20Probabilistic%20Neural%20Nets%20by%20Importance%20Sampling/Quick%20Training%20of%20Probabilistic%20Neural%20Nets%20by%20Importance%20Sampling.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/distributed%20representations/2017-12/Quick%20Training%20of%20Probabilistic%20Neural%20Nets%20by%20Importance%20Sampling/note.md)
-
 - references
-    - [word2vec(tensorflow)](https://github.com/llhthinker/udacity-deeplearning/blob/master/5_word2vec.ipynb)
-    - [subword-based word vector](https://github.com/facebookresearch/fastText)
-    - [Chinese Word Vectors 中文词向量](https://github.com/Embedding/Chinese-Word-Vectors)
-    - [Tencent AI Lab Embedding Corpus for **Over 8 Million** Chinese Words and Phrases](https://ai.tencent.com/ailab/nlp/embedding.html)
-
+  - [word2vec(tensorflow)](https://github.com/llhthinker/udacity-deeplearning/blob/master/5_word2vec.ipynb)
+  - [subword-based word vector](https://github.com/facebookresearch/fastText)
+  - [Chinese Word Vectors 中文词向量](https://github.com/Embedding/Chinese-Word-Vectors)
+  - [Tencent AI Lab Embedding Corpus for **Over 8 Million** Chinese Words and Phrases](https://ai.tencent.com/ailab/nlp/embedding.html)
 
 ### Distributed Sentence Representations
 - 2017-11
@@ -62,6 +60,7 @@
 - references
   - [ChineseNER (TensorFlow)](https://github.com/zjy-ucas/ChineseNER)
   - [flair (PyTorch)](https://github.com/zalandoresearch/flair)
+
 ### Language Model
 - 2017-11
   - Bengio et al. - 2003 - **A neural probabilistic language model** [[pdf]](http://www.jmlr.org/papers/v3/bengio03a.html)
@@ -71,7 +70,6 @@
   - Howard and Ruder - 2018 - **Universal language model fine-tuning for text classification(ULMFit)** [[pdf]](http://www.aclweb.org/anthology/P18-1031)
   - Radford et al. - 2018 - **Improving language understanding by generative pre-training** [[pdf]](https://www.cs.ubc.ca/~amuham01/LING530/papers/radford2018improving.pdf)
   - Devlin et al. - 2018 - **Bert: Pre-training of deep bidirectional transformers for language understanding** [[pdf]](https://arxiv.org/abs/1810.04805)
-  
 - references
   - [Blog:The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning)](http://jalammar.github.io/illustrated-bert/)
   - ELMo
@@ -159,8 +157,7 @@
   - [PyTorchText(知乎看山杯)](https://github.com/chenyuntc/PyTorchText)
 
 ### Materials
-
-- [Neural Networks for NLP (CS11-747 Fall 2017 @ CMU)](http://www.phontron.com/class/nn4nlp2017/schedule.html)
+- [Neural Networks for NLP (CS11-747 Spring 2019 @ CMU)](http://www.phontron.com/class/nn4nlp2019/)
 - optimization algorithms
   - [An overview of gradient descent optimization algorithms](http://ruder.io/optimizing-gradient-descent/)
 
@@ -169,3 +166,5 @@
 - [StateOfTheArt.ai](https://www.stateoftheart.ai/)
 - [funNLP(从文本中抽取结构化信息等资源汇总)](https://github.com/fighting41love/funNLP)
 - [StanfordNLP: Official Stanford NLP Python Library for Many Human Languages](https://github.com/stanfordnlp/stanfordnlp)
+- [Browse state-of-the-art](https://paperswithcode.com/sota)
+
