@@ -5,6 +5,7 @@
 - [Language Model (LM for pre-training)](#language-model)
 - [Machine Translation](#machine-translation)
 - [Question Answering (Machine Reading Comprehension)](#question-answering)
+- [Recommendation Systems](#recommendation-systems)
 - [Relation Extraction](#relation-extraction)
 - [Sentences Matching (Natural Language Inference/Textual Entailment)](#sentences-matching)
 - [Text Classification (Sentiment Classification)](#text-classification)
@@ -113,6 +114,15 @@
   - [深度学习解决机器阅读理解任务的研究进展](https://zhuanlan.zhihu.com/p/22671467)
   - [RCPapers: Must-read papers on Machine Reading Comprehension](https://github.com/thunlp/RCPapers)
 
+### Recommendation Systems
+* 2019-05
+  * Rendle S. - 2010 - **Factorization machines** [[pdf]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5694074) [[note]](https://www.cnblogs.com/pinard/p/6370127.html)
+  * Cheng et al. - 2016 - **Wide & Deep Learning for Recommender Systems** [[pdf]](https://dl.acm.org/citation.cfm?id=2988454)
+  * Guo et al. - 2017 - **DeepFM: A Factorization-Machine based Neural Network for CTR Prediction** [[pdf]](https://arxiv.org/abs/1703.04247)
+  * He and Chua. - 2017 - **Neural Factorization Machines for Sparse Predictive Analytics** [[pdf]](https://dl.acm.org/citation.cfm?id=3080777)
+* references
+  * 谷歌、阿里、微软等10大深度学习CTR模型最全演化图谱【推荐、广告、搜索领域】(https://zhuanlan.zhihu.com/p/63186101)
+  
 ### Relation Extraction
 * 2018-08 
   * Mintz et al. - 2009 - **Distant supervision for relation extraction without labeled data** [[pdf]](https://dl.acm.org/citation.cfm?id=1690287)
