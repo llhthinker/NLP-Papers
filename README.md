@@ -149,8 +149,11 @@
   * Ghaeini et al. - 2018 - **DR-BiLSTM: Dependent Reading Bidirectional LSTM for Natural Language Inference** [[pdf]](https://arxiv.org/abs/1802.05577)
 * references
   * [The Stanford Natural Language Inference (SNLI) Corpus](https://nlp.stanford.edu/projects/snli/)
-
-
+  * [A curated list of papers dedicated to neural text (semantic) matching.](https://github.com/NTMC-Community/awesome-neural-models-for-semantic-match)
+  * MatchZoo:一个通用的文本匹配工具包 [[tensorflow]](https://github.com/NTMC-Community/MatchZoo) [[pytorch]](https://github.com/NTMC-Community/MatchZoo-py)
+  * [AnyQ:面向FAQ集合的问答系统框架、文本语义匹配工具SimNet](https://github.com/baidu/AnyQ)
+  * [Kaggle: Quora Question Pairs](https://github.com/HouJP/kaggle-quora-question-pairs)
+  
 ### Text Classification
 - 2017-09
   - Joulin et al. - 2016 - **Bag of tricks for efficient text classification** [[pdf]](https://arxiv.org/abs/1607.01759v3) [[pdf (annotated)]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-09/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification.pdf) [[note]](https://github.com/llhthinker/NLP-Papers/blob/master/text%20classification/2017-09/Bag%20of%20Tricks%20for%20Efficient%20Text%20Classification/note.md)
