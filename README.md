@@ -78,7 +78,10 @@
     - [Pre-trained ELMo Representations for Many Languages](https://github.com/HIT-SCIR/ELMoForManyLangs)
   - [Quick Start: Training an IMDb sentiment model with ULMFiT](https://docs.fast.ai/text.html#Quick-Start:-Training-an-IMDb-sentiment-model-with-ULMFiT)
   - [finetune-transformer-lm: Code and model for the paper "Improving Language Understanding by Generative Pre-Training"](https://github.com/openai/finetune-transformer-lm)
-  - [awesome-bert: bert nlp papers, applications and github resources ， BERT 相关论文和 github 项目](https://github.com/Jiakui/awesome-bert)
+  - **BERT**
+    - [google-research/bert](https://github.com/google-research/bert): **officical TensorFlow** code and pre-trained models for BERT
+    - [huggingface/transformers](https://github.com/huggingface/transformers) provides state-of-the-art general-purpose architectures (**BERT**, **GPT-2**, **RoBERTa**, **XLM**, **DistilBert**, **XLNet**, **CTRL**...) for NLU and NLG using **TensorFlow 2.0** and **PyTorch**.
+    - [awesome-bert](https://github.com/Jiakui/awesome-bert): bert nlp papers, applications and github resources ， BERT 相关论文和 github 项目
   
 ### Machine Translation
 * 2017-12
