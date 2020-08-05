@@ -24,7 +24,7 @@
   - [word2vec(tensorflow)](https://github.com/llhthinker/udacity-deeplearning/blob/master/5_word2vec.ipynb)
   - [subword-based word vector](https://github.com/facebookresearch/fastText)
   - [Chinese Word Vectors 中文词向量](https://github.com/Embedding/Chinese-Word-Vectors)
-  - [Tencent AI Lab Embedding Corpus for **Over 8 Million** Chinese Words and Phrases](https://ai.tencent.com/ailab/nlp/embedding.html)
+  - [Tencent AI Lab Embedding Corpus for **Over 8 Million** Chinese Words and Phrases](https://ai.tencent.com/ailab/nlp/en/embedding.html)
 
 ### Distributed Sentence Representations
 - 2017-11
