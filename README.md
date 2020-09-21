@@ -9,7 +9,7 @@
 - [Relation Extraction](#relation-extraction)
 - [Sentences Matching (Natural Language Inference/Textual Entailment)](#sentences-matching)
 - [Text Classification (Sentiment Classification)](#text-classification)
-- [Materials/Toolkits](#materials)
+- [Materials/Toolkits/Corpus](#materials)
 
 ## Papers and Notes
 ### Distributed Word Representations
@@ -189,4 +189,8 @@
 - [funNLP(从文本中抽取结构化信息等资源汇总)](https://github.com/fighting41love/funNLP)
 - [StanfordNLP: Official Stanford NLP Python Library for Many Human Languages](https://github.com/stanfordnlp/stanfordnlp)
 - [Browse state-of-the-art](https://paperswithcode.com/sota)
+- **Corpus**
+  - [ChineseNLPCorpus](https://github.com/InsaneLife/ChineseNLPCorpus)
+  - [nlp_chinese_corpus](https://github.com/brightmart/nlp_chinese_corpus)
+  - [CLUE(中文任务基准测评)](https://github.com/CLUEbenchmark/CLUE)
 
