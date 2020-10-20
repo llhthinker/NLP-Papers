@@ -180,8 +180,9 @@
 
 ### Materials
 - [Neural Networks for NLP (CS11-747 Spring 2019 @ CMU)](http://www.phontron.com/class/nn4nlp2019/)
-- optimization algorithms
+- deep learning
   - [An overview of gradient descent optimization algorithms](http://ruder.io/optimizing-gradient-descent/)
+  - [Focal Loss（缓解多分类样本不均衡问题）](https://zhuanlan.zhihu.com/p/49981234)
 
 - [NLP-progress](https://github.com/sebastianruder/NLP-progress)
 - [Awesome-Chinese-NLP](https://github.com/crownpku/awesome-chinese-nlp)
