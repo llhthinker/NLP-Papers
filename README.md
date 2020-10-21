@@ -139,6 +139,7 @@
   * [OpenNRE](https://github.com/thunlp/OpenNRE)
   * [NREPapers: Must-read papers on neural relation extraction (NRE)](https://github.com/thunlp/NREPapers)
   * [awesome-relation-extraction](https://github.com/roomylee/awesome-relation-extraction)
+  * [Entity-Relation-Extraction(管道式实体及关系抽取)](https://github.com/yuanxiaosc/Entity-Relation-Extraction)
   
 ### Sentences Matching
 
